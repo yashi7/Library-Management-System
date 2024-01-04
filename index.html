@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRIST UNIVERSITY LIBRARY</title>
+    <link rel="icon" href="Images/Christ Logo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+        }
+
+        header {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left, .right-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-links {
+            margin-left: auto;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            color: black;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        img.overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; /* Adjust the size as needed */
+            height: auto;
+            object-fit: cover;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1><b>LIBRARY </b></h1><h1 style="color: orange;"><b>HUB</b></h1>
+        </div>
+        <div class="right-links">
+            <h2><a href="login.html"><b>Login/Register</b></a></h2>
+            <h2><a href="#"><b>About Us</b></a></h2>
+            <h2><a href="#"><b>Contact Us</b></a></h2>
+            <h2><a href="help.html"><b>Help ?</b></a></h2>
+        </div>
+    </header>
+    <br>
+    <div class="image-container">
+        <img src="Images/Library Homepage.jpg" alt="Library Image">
+        <img src="Images/Christ.png" alt="Christ Image" class="overlay">
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Hi</h3>
+</body>
+</html>
