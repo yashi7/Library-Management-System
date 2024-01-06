@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="User_ID">User_ID:</label>
+                <input type="text" id="User_ID" name="User_ID" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+
+</html>
