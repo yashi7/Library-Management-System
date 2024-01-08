@@ -10,6 +10,7 @@
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
             position: relative;
+            text-align: center;
         }
 
         header {
@@ -26,6 +27,29 @@
 
         .right-links {
             margin-left: auto;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 10px; 
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 2px dotted black;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 8px 15px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         a {
@@ -61,7 +85,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 90%; 
+            width: 90%;
             height: auto;
             object-fit: cover;
             z-index:1;
@@ -74,18 +98,24 @@
             <h1><b>LIBRARY </b></h1><h1 style="color: orange;"><b>HUB</b></h1>
         </div>
         <div class="right-links">
-            <h2 style="z-index: 2;"><a href="login.html" ><b style="color: white;">Login/Register</b></a></h2>
-            <h2 style="z-index: 2;"><a href="about_us.html"><b style="color: white;">About Us</b></a></h2>
-            <h2 style="z-index: 2;"><a href="contact_us.html"><b style="color: white;">Contact Us</b></a></h2>
-            <h2 style="z-index: 2;"><a href="help.html"><b style="color: white;" >Help ?</b></a></h2>
+            <h2><a href="login.html"><b>Login/Register</b></a></h2>
+            <h2><a href="about_us.html"><b>About Us</b></a></h2>
+            <h2><a href="contact_us.html"><b>Contact Us</b></a></h2>
+            <h2><a href="help.html"><b>Help ?</b></a></h2>
         </div>
     </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button type="button">&#x1F50D;</button>
+    </div>
+    <br>
     <br>
     <div class="image-container"  >
         <img src="Images/4-removebg-preview (1) (2).png" alt="Christ Image" class="overlay" style="margin-top: 20%; ">
     </div>
     <br>
-    
-    
+    <br>
+    <br>
+    <h3>Hi</h3>
 </body>
 </html>
