@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(Images/image1.jpg) center repeat fixed;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header {
+    padding: 20px 0;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    border-radius: 10px 10px 0 0;
+    color: white;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 10px 0;
+    background: linear-gradient(to right, #2980b9, #3498db);
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+.content { line-height: 1.8; }
+
+h1, h2, p { color: white; margin-bottom: 20px; }
+
+a { color: #3498db; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+.popup-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+}
+
+.query-form {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    animation: expand 0.5s ease-out;
+}
+
+.query-form h3 { font-size: 1.5em; color: #3498db; margin-bottom: 15px; }
+
+.query-form label { font-size: 1.2em; color: #333; margin-bottom: 8px; }
+
+.query-form textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.query-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #3498db;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+@keyframes expand {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
