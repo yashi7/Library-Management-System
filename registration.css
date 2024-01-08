@@ -1,0 +1,61 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Images/image1.jpg') center repeat fixed;
+    color: white;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.129);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.245);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style for form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.975); /* Adjust label text color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    width: calc(100% - 18px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white; /* Adjust input text color */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
