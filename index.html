@@ -10,6 +10,7 @@
             margin: 0;
             font-family: 'Times New Roman', Times, serif;
             position: relative;
+            text-align: center;
         }
 
         header {
@@ -28,6 +29,29 @@
             margin-left: auto;
         }
 
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-right: 10px; 
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 2px dotted black;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 8px 15px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
         a {
             text-decoration: none;
             margin: 0 15px;
@@ -37,12 +61,12 @@
         h1 {
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
-            color: black;
+            color: white;
         }
 
         .image-container {
             position: relative;
-            overflow: hidden;
+            overflow: visible;
             width: 100%;
             height: auto;
         }
@@ -50,9 +74,10 @@
         img {
             width: 100%;
             height: auto;
-            object-fit: cover;
-            display: block;
+            
+            
             margin: 0 auto;
+            
         }
 
         img.overlay {
@@ -60,33 +85,44 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 90%; /* Adjust the size as needed */
+            width: 90%;
             height: auto;
             object-fit: cover;
-            z-index: 1;
+            z-index:1;
         }
     </style>
 </head>
-<body>
-    <header>
+<body style="background-image: url(Images/image1.jpg); z-index: 0;">
+    <header >
         <div class="left">
             <h1><b>LIBRARY </b></h1><h1 style="color: orange;"><b>HUB</b></h1>
         </div>
         <div class="right-links">
+<<<<<<< HEAD
             <h2><a href="login.html"><b>Login/Register</b></a></h2>
             <h2><a href="about_us.html"><b>About Us</b></a></h2>
             <h2><a href="contact_us.html"><b>Contact Us</b></a></h2>
             <h2><a href="help.html"><b>Help ?</b></a></h2>
+=======
+            <h2><a href="login.html"><b style="color: white;">LOGIN/REGISTER</b></a></h2>
+            <h2><a href="about_us.html"><b style="color: white;">ABOUT US</b></a></h2>
+            <h2><a href="contact_us.html"><b style="color: white;">CONTACT US</b></a></h2>
+            <h2><a href="help.html"><b style="color: white;">HELP?</b></a></h2>
+>>>>>>> b20864f7bacd55a7e2c663728947c847bfcb2164
         </div>
     </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button type="button">&#x1F50D;</button>
+    </div>
     <br>
-    <div class="image-container">
-        <img src="Images/Library Homepage.jpg" alt="Library Image">
-        <img src="Images/Christ.png" alt="Christ Image" class="overlay">
+    <br>
+    <div class="image-container"  >
+        <img src="Images/4-removebg-preview (1) (2) (1).png" alt="Christ Image" class="overlay" style="margin-top: 22%; ">
     </div>
     <br>
     <br>
     <br>
-    <h3>Hi</h3>
+    
 </body>
 </html>
