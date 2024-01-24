@@ -3,130 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Profile</title>
+  <title>YOUR PROFILE</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
       margin: 0;
       padding: 0;
-      background-color: #f0f2f5;
     }
 
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 1em;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
       text-align: center;
     }
 
-    main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 80vh;
-    }
-
-    .profile-card {
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-      overflow: hidden;
-      width: 400px;
-      position: relative;
     }
 
-    .profile-photo-container {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      transform-origin: top left;
+    h2 {
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: lightgreen;
+      color: black;
+    }
+
+    .user-image {
+      text-align: center;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .user-image img {
+      max-width: 200px;
+      border-radius: 50%;
       transition: transform 0.3s ease-in-out;
-      animation: pulse 2s infinite alternate;
     }
 
-    @keyframes pulse {
+    .user-image img:hover {
+      transform: scale(1.1);
+    }
+
+    .animated {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .animated:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
       from {
-        transform: scale(1);
+        opacity: 0;
       }
       to {
-        transform: scale(1.05);
+        opacity: 1;
       }
     }
 
-    .profile-photo {
-      border: 5px solid white;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
+    .book-details {
+      animation: slideInUp 1s ease-out;
     }
 
-    .user-info {
-      padding: 1em;
-      text-align: center;
+    @keyframes slideInUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
-    button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 0.5em 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
+    .book-list {
+      list-style: none;
+      padding: 0;
     }
 
-    button:hover {
-      background-color: #45a049;
+    .book-list li {
+      margin-bottom: 8px;
+      color: #333;
     }
 
-    .profile-card:hover .profile-photo-container {
-      transform: rotate(-15deg) scale(1.2);
+    .notification {
+      animation: fadeIn 1s ease-out;
+      color: black;
+      background-color: lightskyblue;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 20px;
     }
 
-    .profile-card:hover .profile-photo {
-      transform: rotate(15deg);
+    .notification p {
+      margin: 0;
     }
-
-  .profile-card:hover .profile-photo-container {
-    transform: rotate(-15deg) scale(1.2);
-  }
-
-  .profile-card:hover .profile-photo {
-    transform: rotate(15deg);
-  }
-
-  .profile-card:hover .tilt-left {
-    transform: rotate(-5deg);
-  }
-
-  .profile-card:hover .tilt-right {
-    transform: rotate(5deg);
-  }
-</style>
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>User Profile</h1>
+    <h1>USER PROFILE</h1>
   </header>
 
-  <main>
-    <div class="profile-card">
-      <div class="profile-photo-container">
-        <img class="profile-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVl5GGpKvu22RUW7LnYcIxIv97I4ZmaJE1Q&usqp=CAU">
-      </div>
-    <div class="profile-photo-container tilt-left">
-        <img class="profile-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVl5GGpKvu22RUW7LnYcIxIv97I4ZmaJE1Q&usqp=CAU">
+  <section>
+    <div class="user-image">
+      <img src="data:image/png;base64,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" alt="User Profile Photo">
     </div>
+    <table>
+      <tr>
+        <th>User ID</th>
+        <td id="userId">23122133</td>
+      </tr>
+      <tr>
+        <th>User Name</th>
+        <td id="userName">Siddhartha Sinha</td>
+      </tr>
+      <tr>
+        <th>Date of Birth</th>
+        <td id="userDob">19-10-2001</td>
+      </tr>
+      <tr>
+        <th>User Address</th>
+        <td id="userAddress">Lavasa, Pune</td>
+      </tr>
+      <tr>
+        <th>User Email</th>
+        <td id="userEmail">siddhartha.sinha@msds.christuniversity.in</td>
+      </tr>
+      <tr>
+        <th>Contact Info</th>
+        <td id="userContact">8582873442</td>
+      </tr>
+    </table>
 
-      <div class="user-info">
-        <h2>User Name</h2>
-        <p>Email: user@example.com</p>
-        <p>Location: City, Country</p>
-        <a href="user2.html"><button>More Info</button></a>
-      </div>
+    <h2><center>BOOK DETAILS</center></h2>
+    <div class="animated book-details" id="currentBook">
+      <strong>Currently Accessing:</strong> <span>BOOK 1</span>
     </div>
-  </main>
+    <ul class="book-list">
+      <li><strong>Past Borrowed Books:</strong> BOOK 2, BOOK 3</li>
+      <li><strong>Past Returned Books:</strong> BOOK 4, BOOK 5</li>
+    </ul>
+
+    <div class="animated notification" id="notification">
+      <h2><center>NOTIFICATIONS</center></h2>
+      <p>No new notifications</p>
+    </div>
+  </section>
+
+  <script>
+    // Simulating dynamic content with JavaScript
+    document.getElementById('userId').innerText = '23122133';
+    document.getElementById('userName').innerText = 'Siddhartha Sinha';
+    document.getElementById('userDob').innerText = '19-10-2001';
+    document.getElementById('userAddress').innerText = 'Lavasa, Pune';
+    document.getElementById('userEmail').innerText = 'siddhartha.sinha@msds.christuniversity.in';
+    document.getElementById('userContact').innerText = '8582873442';
+    document.getElementById('currentBook').getElementsByTagName('span')[0].innerText = 'BOOK 1';
+    document.getElementById('notification').getElementsByTagName('p')[0].innerText = 'No new notifications';
+  </script>
+
 </body>
 </html>
