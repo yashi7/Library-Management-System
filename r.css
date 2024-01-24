@@ -1,0 +1,62 @@
+/* Basic styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('image1.jpg') center repeat fixed;
+    color: #f5f0f0;
+}
+
+header, footer {
+   
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    color: #e4e8ec;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Transparent sections */
+section {
+    margin-bottom: 20px;
+    margin-left: 470px;
+    margin-right: 470px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.121);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    background-color: transparent;
+    color: #eff4f4;
+    text-align: center;
+}
+
+/* Hide the content of inactive sections */
+section:not(.active) ul,
+section:not(.active) p {
+    display: none;
+}

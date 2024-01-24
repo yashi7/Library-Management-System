@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+    }
+
+    .profile-card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      width: 400px;
+      position: relative;
+    }
+
+    .profile-photo-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      transform-origin: top left;
+      transition: transform 0.3s ease-in-out;
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.05);
+      }
+    }
+
+    .profile-photo {
+      border: 5px solid white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .user-info {
+      padding: 1em;
+      text-align: center;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .profile-card:hover .profile-photo-container {
+      transform: rotate(-15deg) scale(1.2);
+    }
+
+    .profile-card:hover .profile-photo {
+      transform: rotate(15deg);
+    }
+
+  .profile-card:hover .profile-photo-container {
+    transform: rotate(-15deg) scale(1.2);
+  }
+
+  .profile-card:hover .profile-photo {
+    transform: rotate(15deg);
+  }
+
+  .profile-card:hover .tilt-left {
+    transform: rotate(-5deg);
+  }
+
+  .profile-card:hover .tilt-right {
+    transform: rotate(5deg);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>User Profile</h1>
+  </header>
+
+  <main>
+    <div class="profile-card">
+      <div class="profile-photo-container">
+        <img class="profile-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVl5GGpKvu22RUW7LnYcIxIv97I4ZmaJE1Q&usqp=CAU">
+      </div>
+    <div class="profile-photo-container tilt-left">
+        <img class="profile-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVl5GGpKvu22RUW7LnYcIxIv97I4ZmaJE1Q&usqp=CAU">
+    </div>
+
+      <div class="user-info">
+        <h2>User Name</h2>
+        <p>Email: user@example.com</p>
+        <p>Location: City, Country</p>
+        <a href="user2.html"><button>More Info</button></a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRIST UNIVERSITY LIBRARY</title>
+    <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
+    
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            text-align: center;
+            z-index: 0;
+        }
+
+        header {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            text-decoration: none;
+        }
+
+        .left,
+        .right-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-links {
+            margin-left: auto;
+            
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            color: white;
+        }
+
+        .image-bg {
+            background-image: url("{% static 'Images/image1.jpg' %}")
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body class="image-bg">
+    <header>
+        <div class="left">
+          <a href="{% url 'index' %}"> <h1><b>LIBRARY</b></h1><h1 style="color: orange;"><b>HUB</b></h1></a>
+        </div>
+        <div class="right-links">
+            <h2><a href="{% url 'login' %}"><b style="color: white;">LOGIN/REGISTER</b></a></h2>
+            <h2><a href="{% url 'about_us' %}"><b style="color: white;">ABOUT US</b></a></h2>
+            <h2><a href="{% url 'contact_us' %}"><b style="color: white;">CONTACT US</b></a></h2>
+            <h2><a href="{% url 'help' %}"><b style="color: white;">HELP?</b></a></h2>
+        </div>
+    </header>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+<div style="margin-top:10%;">
+<span style="text-align: center;color: white; position:relative; bottom: 0%;">
+    <p>&copy; 2024 Library Management System</p>
+</span>
+</div>
+
+</html>
