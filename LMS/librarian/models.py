@@ -1,8 +1,8 @@
 from django.db import models
 Login = (
-    ("admin","admin"),
-    ("user", "user"),
-    ("librarian", "librarian"),
+    ("Admin","Admin"),
+    ("User", "User"),
+    ("Librarian", "Librarian"),
     
 )
  
