@@ -26,10 +26,10 @@ def register(request):
         Email=request.POST.get('email')
         pass1=request.POST.get('password')
         pass2=request.POST.get('confirmPassword')
+        Login_as=request.POST.get('login_as')
+        RegisterNo=request.POST.get('regno')
 
-        # if pass1!=pass2:
-        # #     return HttpResponse("your password and confirm password are not same!!")
-        # else:
+       
         my_user=User.objects.create_user(username,Email,pass1)
         my_user.save()
         
