@@ -1,189 +1,591 @@
-<!DOCTYPE html>
+{% load static %}
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YOUR PROFILE</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    h2 {
-      color: #555;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background-color: lightgreen;
-      color: black;
-    }
-
-    .user-image {
-      text-align: center;
-      margin-bottom: 20px;
-      animation: fadeIn 1s ease-out;
-    }
-
-    .user-image img {
-      max-width: 200px;
-      border-radius: 50%;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .user-image img:hover {
-      transform: scale(1.1);
-    }
-
-    .animated {
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .animated:hover {
-      transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .book-details {
-      animation: slideInUp 1s ease-out;
-    }
-
-    @keyframes slideInUp {
-      from {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    .book-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .book-list li {
-      margin-bottom: 8px;
-      color: #333;
-    }
-
-    .notification {
-      animation: fadeIn 1s ease-out;
-      color: black;
-      background-color: lightskyblue;
-      padding: 10px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    .notification p {
-      margin: 0;
-    }
-  </style>
+  <head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/c0fc838bea.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'styles\user.css' %}">
 </head>
-<body>
+  <body style="background-image: url('/static/Images/image1.jpg'); font-family: 'Times New Roman', Times, serif;">
+     
+      <nav class="navbar navbar-expand-md navbar-light">
+<button class="navbar-toggler ml-auto mb-2 bg-light" type="button" 
+data-toggle="collapse" data-target="#navbar">
+<span class="navbar-toggler-icon"></span>
 
-  <header>
-    <h1>USER PROFILE</h1>
-  </header>
+</button>
+<div class="collapse navbar-collapse" id="navbar">
+    <div class="container-fluid">
+        <div class="row">
+          
+            <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                <a href="#" class="navbar-brand text-white d-blockmx-auto text-center py-3 mb-4">
+                  <img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
+                <div class="bottom-border pb-3">
+                    
+                    <p class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;" >{{request.user.username}}</p>
+                </div>
+                <ul class="navbar-nav flex-column mt-4">
+                   <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    current"><i class="fas fa-home text-light fa-lg mr-3"></i>
+                Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
+                Profile</a></li>
+               
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
+                Books</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
+                Analytics</a></li>
+              
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
+                Tables</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
+                Settings</a></li>
+                
 
-  <section>
-    <div class="user-image">
-      <img src="data:image/png;base64,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" alt="User Profile Photo">
+            </div>
+           
+<div class="col-xl-10 col-lg-9 col-md-8 ml-auto top-bar  py-2 top-nav">
+    <div class="row align-item-center">
+   <div class="col-md-4">
+ 
+   </div>
+   <div class="col-md-5">
+<form>
+    <div class="input-group">
+        <input type="text" class="form-control search-input" placeholder="search">
+        <button type="button" class="btn btn-white search-button">
+            <i class="fas fa-search text-dark"></i>
+        </button>
     </div>
-    <table>
-      <tr>
-        <th>User ID</th>
-        <td id="userId">23122133</td>
-      </tr>
-      <tr>
-        <th>User Name</th>
-        <td id="userName">Siddhartha Sinha</td>
-      </tr>
-      <tr>
-        <th>Date of Birth</th>
-        <td id="userDob">19-10-2001</td>
-      </tr>
-      <tr>
-        <th>User Address</th>
-        <td id="userAddress">Lavasa, Pune</td>
-      </tr>
-      <tr>
-        <th>User Email</th>
-        <td id="userEmail">siddhartha.sinha@msds.christuniversity.in</td>
-      </tr>
-      <tr>
-        <th>Contact Info</th>
-        <td id="userContact">8582873442</td>
-      </tr>
-    </table>
-
-    <h2><center>BOOK DETAILS</center></h2>
-    <div class="animated book-details" id="currentBook">
-      <strong>Currently Accessing:</strong> <span>BOOK 1</span>
+</form>
+   </div>
+   <div class="col-md-3">
+       <ul class="navbar-nav">
+           <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet">
+            <i class="fas fa-comments text-light fa-lg"></i></a>
+            <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet">
+             <i class="fas fa-bell text-light fa-lg"></i></a>
+             <li class="nav-item ml-md-auto"><a href="#"class="nav-link"
+            data-toggle="modal" data-target="#sign-out">
+             <i class="fas fa-sign-out-alt text-white fa-lg"></i></a>
+       </ul>
+   </div>
+        </div>
+</div>
+            
+        </div>
     </div>
-    <ul class="book-list">
-      <li><strong>Past Borrowed Books:</strong> BOOK 2, BOOK 3</li>
-      <li><strong>Past Returned Books:</strong> BOOK 4, BOOK 5</li>
-    </ul>
+</div>
+      </nav>
+      
+      <div class="modal" id="sign-out">
+          <div class="modal-dialog">
+             <div class="modal-content">
+             <div class="modal-header">
+                 <h4 class="modal-title">Signout</h4>
+                <button type="button" class="close" data-dismiss="modal"
+                 >&times;</button>
+                </div>  
+                <div class="modal-body">
+                    press the button
+                </div>
+                <div class="modal-footer">
+         <button type="button" class="btn btn-success" data-dismiss="modal">
+             Leave    </button>
+             <button type="button" class="btn btn-danger" data-dismiss="modal">
+                    Cancel    </button>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+    <section>
+ <div class="container-fluid">
+     <div class="row">
+         <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+             <div class="row pt-md-5 mt-md-3 mb-5">
+                 <!-- <div class="col-xl-3 col-sm-6 p-2"> -->
+                     <!-- <div class="card card-common"> -->
+                         <!-- <div class="card-body">
+                             <div class="d-flex justify-content-between">
+                                 <i class="fas fa-shopping-cart fa-3x text-info"></i>
+                                 <div class="text-right text-dark">
+                                     <h5>Books</h5>
+                                     <h3>$10,000.00</h3>
+                                 </div>
+                             </div>
+                         </div> -->
+            <!-- <div class="card-footer text-dark">
+                <i class="fas fa-spinner fa-pulse text-info mr-3"></i>
+                <span>Updating</span>
+            </div> -->
+                     <!-- </div> -->
 
-    <div class="animated notification" id="notification">
-      <h2><center>NOTIFICATIONS</center></h2>
-      <p>No new notifications</p>
+                 <!-- </div> -->
+                 <div class="col-xl-3 col-sm-6 p-2">
+                        <div class="card card-common">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fas fa-money-bill-alt fa-3x text-success"></i>
+                                        <div class="text-right text-dark">
+                                            <h5>Penalty</h5>
+                                            <h3>50 Rs</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                   <div class="card-footer text-dark">
+                    <i class="fas fa-spinner fa-pulse text-success mr-3"></i>
+                       <span>Updating</span>
+                   </div>
+                            <!-- </div>
+                     
+                    </div> -->
+                    <!-- <div class="col-xl-3 col-sm-6 p-2">
+                            <div class="card card-common">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <i class="fas fa-users fa-3x text-warning"></i>
+                                            <div class="text-right text-dark">
+                                                <h5>Users</h5>
+                                                <h3>3,000.00</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                       <div class="card-footer text-dark">
+                        <i class="fas fa-spinner fa-pulse text-warning mr-3"></i>
+                           <span>Updating</span>
+                       </div> -->
+                                <!-- </div> -->
+<!--                      
+                        </div> -->
+                        <!-- <div class="col-xl-3 col-sm-6 p-2">
+                                <div class="card card-common">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <i class="fas fa-chart-line fa-3x text-danger"></i>
+                                                <div class="text-right text-dark">
+                                                    <h5>Visitors</h5>
+                                                    <h3>2,000.00</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                           <div class="card-footer text-dark">
+                            <i class="fas fa-spinner fa-pulse text-danger mr-3"></i>
+                               <span>Updating</span>
+                           </div> -->
+                                    <!-- </div> -->
+                     
+                            <!-- </div> -->
+             </div>
+         </div>
+     </div>
+ </div>
+     
+    </section>
+
+   
+<section>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                <div class="row align-items-center">
+                     <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+                       <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif;">
+                           LIBRARY STAFF
+                       </h3> 
+                       <table class="table table-striped bg-light text-center">
+                           <thead>
+                               <tr class="text-dark">
+                                   <th>#</th>
+                                   <th>Name</th>
+                                   <th>Salary</th>
+                                   <th>Date</th>
+                                   <th>Contact</th>
+
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <th>1</th>
+                                   <td>Jade</td>
+                                   <td>$6000</td>
+                                   <td>10-09-2019</td>
+            <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
+                               </tr>
+                               <tr>
+                                    <th>2</th>
+                                    <td>Jane</td>
+                                    <td>$5000</td>
+                                    <td>10-09-2019</td>
+             <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
+                                </tr>
+                                <tr>
+                                        <th>3</th>
+                                        <td>Elon</td>
+                                        <td>$7000</td>
+                                        <td>10-09-2019</td>
+                 <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
+                                    </tr>
+                                    <tr>
+                                            <th>4</th>
+                                            <td>Dave</td>
+                                            <td>$9000</td>
+                                            <td>10-09-2019</td>
+                     <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
+                                        </tr>
+                           </tbody>
+                       </table>
+                       
+                       <nav class="color">
+                           <ul class="pagination justify-content-center">
+                               <li class="page-item">
+                                   <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                       <span>&laquo;</span>
+                                   </a>
+                               </li>
+                               <li class="page-item active">
+                                    <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="page-item" >
+                                        <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="page-item" >
+                                            <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                                3
+                                            </a>
+                                        </li>
+                               <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                        <span>&raquo;</span>
+                                    </a>
+                                </li>
+
+                           </ul>
+                       </nav>
+
+
+
+
+                       
+                      </div>
+                <div class="col-xl-6 col-12">
+        <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif ;">USERS</h3>
+        <table class="table table-color  table-hover">
+                <thead>
+                        <tr class="text-dark">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                            <th>Status</th>
+
+                        </tr>
+                    </thead> 
+                    <tbody>
+                            <tr>
+                                    <th>1</th>
+                                    <td>Mike</td>
+                                    <td>$6000</td>
+                                    <td>10-09-2019</td>
+             <td><span class="badge badge-success w-75 py-2">Approved</span></td>
+                                </tr>  
+                                <tr>
+                                        <th>2</th>
+                                        <td>Mark</td>
+                                        <td>$6000</td>
+                                        <td>10-09-2019</td>
+                 <td><span class="badge badge-success w-75 py-2">Approved</span></td>
+                                    </tr>
+                                    <tr>
+                                            <th>3</th>
+                                            <td>David</td>
+                                            <td>$6000</td>
+                                            <td>10-09-2019</td>
+                     <td><span class="badge badge-danger w-75 py-2">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                                <th>4</th>
+                                                <td>William</td>
+                                                <td>$6000</td>
+                                                <td>10-09-2019</td>
+                         <td><span class="badge badge-danger w-75 py-2">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                    <th>5</th>
+                                                    <td>Joseph</td>
+                                                    <td>$6000</td>
+                                                    <td>10-09-2019</td>
+                             <td><span class="badge badge-success w-75 py-2">Approved</span></td>
+                                                </tr>
+                    </tbody>
+        </table>
+        <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a href="#" class="page-link py-2 px-3" style="color: black;">
+                            <span>&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                         <a href="#" class="page-link py-2 px-3" style="color: black;">
+                             1
+                         </a>
+                     </li>
+                     <li class="page-item">
+                             <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                 2
+                             </a>
+                         </li>
+                         <li class="page-item">
+                                 <a href="#" class="page-link py-2 px-3" style="color: black;">
+                                     3
+                                 </a>
+                             </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link py-2 px-3" style="color: black;">
+                            <span>&raquo;</span>
+                        </a>
+                     </li>
+
+                </ul>
+            </nav>
+
+                        
+                         </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <script>
-    // Simulating dynamic content with JavaScript
-    document.getElementById('userId').innerText = '23122133';
-    document.getElementById('userName').innerText = 'Siddhartha Sinha';
-    document.getElementById('userDob').innerText = '19-10-2001';
-    document.getElementById('userAddress').innerText = 'Lavasa, Pune';
-    document.getElementById('userEmail').innerText = 'siddhartha.sinha@msds.christuniversity.in';
-    document.getElementById('userContact').innerText = '8582873442';
-    document.getElementById('currentBook').getElementsByTagName('span')[0].innerText = 'BOOK 1';
-    document.getElementById('notification').getElementsByTagName('p')[0].innerText = 'No new notifications';
-  </script>
+     
+      <section>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                      <div class="row">
+                            <div class="col-xl-6 col-12">
+                                    <h4 class="text-dark p-3 mb-3">Tasks.</h4>
+                                    <div class="container-fluid bg-1">
+                                        <div class="row py-3 mb-4 task-border align-items-center">
+                                            <div class="col-1">
+                                                <input type="checkbox" checked>
+                                
+                                            </div>
+                                            <div class="col-sm-9 col-8">
+                                                Lorem ipsum dolor sit amet, consectetur 
+                                                adipisicing elit.
+                                            </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Edit"
+                                data-placement="top">
+                                <i class="fas fa-edit fa-lg text-success mr-2">
+                                </i></a>
+                                            </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Delete"
+                                data-placement="top">
+                                <i class="fas fa-trash-alt fa-lg text-danger">
+                                </i></a>
+                                     </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid bg-2">
+                                      <div class="row py-3 mb-4 task-border align-items-center">
+                                          <div class="col-1">
+                                              <input type="checkbox" checked>
+                                
+                                          </div>
+                                          <div class="col-sm-9 col-8">
+                                              Lorem ipsum dolor sit amet, consectetur 
+                                              adipisicing elit.
+                                          </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Edit"
+                                data-placement="top">
+                                <i class="fas fa-edit fa-lg text-success mr-2">
+                                </i></a>
+                                          </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Delete"
+                                data-placement="top">
+                                <i class="fas fa-trash-alt fa-lg text-danger">
+                                </i></a>
+                                   </div>
+                                      </div>
+                                  </div>
+                                  <div class="container-fluid bg-3">
+                                      <div class="row py-3 mb-4 task-border align-items-center">
+                                          <div class="col-1">
+                                              <input type="checkbox" checked>
+                                
+                                          </div>
+                                          <div class="col-sm-9 col-8">
+                                              Lorem ipsum dolor sit amet, consectetur 
+                                              adipisicing elit.
+                                          </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Edit"
+                                data-placement="top">
+                                <i class="fas fa-edit fa-lg text-success mr-2">
+                                </i></a>
+                                          </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Delete"
+                                data-placement="top">
+                                <i class="fas fa-trash-alt fa-lg text-danger">
+                                </i></a>
+                                   </div>
+                                      </div>
+                                  </div>
+                                  <div class="container-fluid bg-4">
+                                      <div class="row py-3 mb-4 task-border align-items-center">
+                                          <div class="col-1">
+                                              <input type="checkbox" checked>
+                                
+                                          </div>
+                                          <div class="col-sm-9 col-8">
+                                              Lorem ipsum dolor sit amet, consectetur 
+                                              adipisicing elit.
+                                          </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Edit"
+                                data-placement="top">
+                                <i class="fas fa-edit fa-lg text-success mr-2">
+                                </i></a>
+                                          </div>
+                                <div class="col-1">
+                                <a href="#"data-toggle="tooltip" title="Delete"
+                                data-placement="top">
+                                <i class="fas fa-trash-alt fa-lg text-danger">
+                                </i></a>
+                                   </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                                   
+         <div class="col-xl-6 mt-5">
+            <div class="card rounded">
+             <div class="card-body">
+                 <h5 class="text-dark text-center mb-4">
+                     Quick Status Post
+                   </h5>
+                <ul class="list-inline text-center py-3">
+                 <li class="list-inline-item">
+                     <a href="#"> <i class="fas fa-pencil-alt text-success"></i>
+                    <span class="h6 text-dark">Status</span>
+                    </a>
+                    </li>
+                    <li class="list-inline-item mr-4">
+                            <a href="#"> <i class="fas fa-camera text-info"></i>
+                           <span class="h6 text-dark">Photo</span>
+                           </a>
+                           </li>
+                           <li class="list-inline-item mr-4">
+                                <a href="#"> <i class="fas fa-map-marker text-danger"></i>
+                               <span class="h6 text-dark">Check In</span>
+                               </a>
+                               </li>
 
-</body>
+                      </ul>
+                      <form>
+                          <div class="form-group">
+                              <input type="text" class="form-control py-2 mb-3" 
+                              placeholder="Your Status">
+                              <button type="button" class="btn btn-block text-uppercase 
+                              font-weight-bold text-light bg-button py-2 mb-5">Submit Post</button>
+                          </div>
+                      </form>
+                      <div class="row align-items-center mb-5">
+                          <div class="col-6">
+                              <div class="card bg-light">
+                                  <i class="far fa-calendar-alt fa-8x
+                                  text-info d-block m-auto py-3"></i>
+                                  <div class="card-body">
+                           <p class="card-text text-center font-weight-bold 
+                           text-uppercase">Thu,Oct 10</p>
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="col-6">
+                                <div class="card bg-light">
+                                        <i class="far fa-clock fa-8x
+                                        text-danger d-block m-auto py-3"></i>
+                                        <div class="card-body">
+                                 <p class="card-text text-center font-weight-bold 
+                                 text-uppercase">2:15PM</p>
+                                        </div>
+                                    </div>
+                            </div>
+                      </div>
+
+                </div>
+              </div>
+
+
+       </div>
+           </div>
+       </div>
+              </div>
+
+          </div>
+      </section>
+      
+      
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-3 bd-bottom">
+            <div class="row border-top pt-3">
+                <div class="col-lg-6 text-center">
+                    <ul class="list-inline">
+                <li class="list-inline-item mr-2">
+                    <a href="#" class="text-light">
+                        Company Name
+                    </a>
+                </li>
+                <li class="list-inline-item mr-2">
+                        <a href="#" class="text-light">
+                            About
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-2">
+                            <a href="#" class="text-light">
+                                Support
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-2">
+                                <a href="#" class="text-light">
+                                    Blog
+                                </a>
+                            </li>
+                </ul>
+             </div>
+                <div class="col-lg-6 text-center text-light">
+                    <p>&copy; 2019 Copyright</p>
+                    
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+      
+    
+  </body>
 </html>

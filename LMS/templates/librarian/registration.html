@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +27,19 @@
             <div class="form-group">
                 <label for="email"><b>Email:</b></label>
                 <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="regno"><b>Register Number</b></label>
+                <input type="text" id="regno" name="regno" required>
+            </div>
+            <div class="form-group">
+                <label for="role"><b>Login As</b></label>
+                <select class="form-group" id="role" name="role" required focus style="width: 100%; padding: 2%; background-color: rgba(240, 248, 255, 0.521); color: black;  font-family: 'Times New Roman', Times, serif;">
+                    <option value="Admin" selected>Admin</option>
+                    <option value="User" selected>User</option>
+                    <option value="Librarian" selected>Librarian</option>
+                    <option value="Select Role" disabled selected></option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="password"><b>Password:</b></label>
