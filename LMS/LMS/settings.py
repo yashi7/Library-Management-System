@@ -81,6 +81,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'your_database_name',
+#         'USER': 'your_database_user',
+#         'PASSWORD': 'your_database_password',
+#         'HOST': 'localhost',  # Set to your MySQL server's host
+#         'PORT': '3306',       # Set to your MySQL server's port
+#     }
+# }
 
 
 # Password validation
@@ -101,6 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
