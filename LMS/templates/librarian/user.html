@@ -28,29 +28,29 @@ data-toggle="collapse" data-target="#navbar">
                   <img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
                 <div class="bottom-border pb-3">
                     
-                    <p class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;" >{{request.user.username}}</p>
+                    <p class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;" >{{request.user.username}}-{{user.Register_number}}</p>
                 </div>
                 <ul class="navbar-nav flex-column mt-4">
-                   <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                   <li class="nav-item"><a href="{% url 'user_index' %}" class="nav-link text-white p-3 mb-2
                     current"><i class="fas fa-home text-light fa-lg mr-3"></i>
                 Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
                 Profile</a></li>
                
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
                 Books</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
                 Analytics</a></li>
               
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
                 Tables</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
-                Settings</a></li>
+                Log-out</a></li>
                 
 
             </div>
@@ -195,183 +195,7 @@ data-toggle="collapse" data-target="#navbar">
     </section>
 
    
-<section>
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-                <div class="row align-items-center">
-                     <div class="col-xl-6 col-12 mb-4 mb-xl-0">
-                       <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif;">
-                           LIBRARY STAFF
-                       </h3> 
-                       <table class="table table-striped bg-light text-center">
-                           <thead>
-                               <tr class="text-dark">
-                                   <th>#</th>
-                                   <th>Name</th>
-                                   <th>Salary</th>
-                                   <th>Date</th>
-                                   <th>Contact</th>
 
-                               </tr>
-                           </thead>
-                           <tbody>
-                               <tr>
-                                   <th>1</th>
-                                   <td>Jade</td>
-                                   <td>$6000</td>
-                                   <td>10-09-2019</td>
-            <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                               </tr>
-                               <tr>
-                                    <th>2</th>
-                                    <td>Jane</td>
-                                    <td>$5000</td>
-                                    <td>10-09-2019</td>
-             <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                                </tr>
-                                <tr>
-                                        <th>3</th>
-                                        <td>Elon</td>
-                                        <td>$7000</td>
-                                        <td>10-09-2019</td>
-                 <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                                    </tr>
-                                    <tr>
-                                            <th>4</th>
-                                            <td>Dave</td>
-                                            <td>$9000</td>
-                                            <td>10-09-2019</td>
-                     <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                                        </tr>
-                           </tbody>
-                       </table>
-                       
-                       <nav class="color">
-                           <ul class="pagination justify-content-center">
-                               <li class="page-item">
-                                   <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                       <span>&laquo;</span>
-                                   </a>
-                               </li>
-                               <li class="page-item active">
-                                    <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                        1
-                                    </a>
-                                </li>
-                                <li class="page-item" >
-                                        <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li class="page-item" >
-                                            <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                                3
-                                            </a>
-                                        </li>
-                               <li class="page-item">
-                                    <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                        <span>&raquo;</span>
-                                    </a>
-                                </li>
-
-                           </ul>
-                       </nav>
-
-
-
-
-                       
-                      </div>
-                <div class="col-xl-6 col-12">
-        <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif ;">USERS</h3>
-        <table class="table table-color  table-hover">
-                <thead>
-                        <tr class="text-dark">
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Date</th>
-                            <th>Status</th>
-
-                        </tr>
-                    </thead> 
-                    <tbody>
-                            <tr>
-                                    <th>1</th>
-                                    <td>Mike</td>
-                                    <td>$6000</td>
-                                    <td>10-09-2019</td>
-             <td><span class="badge badge-success w-75 py-2">Approved</span></td>
-                                </tr>  
-                                <tr>
-                                        <th>2</th>
-                                        <td>Mark</td>
-                                        <td>$6000</td>
-                                        <td>10-09-2019</td>
-                 <td><span class="badge badge-success w-75 py-2">Approved</span></td>
-                                    </tr>
-                                    <tr>
-                                            <th>3</th>
-                                            <td>David</td>
-                                            <td>$6000</td>
-                                            <td>10-09-2019</td>
-                     <td><span class="badge badge-danger w-75 py-2">Pending</span></td>
-                                        </tr>
-                                        <tr>
-                                                <th>4</th>
-                                                <td>William</td>
-                                                <td>$6000</td>
-                                                <td>10-09-2019</td>
-                         <td><span class="badge badge-danger w-75 py-2">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                    <th>5</th>
-                                                    <td>Joseph</td>
-                                                    <td>$6000</td>
-                                                    <td>10-09-2019</td>
-                             <td><span class="badge badge-success w-75 py-2">Approved</span></td>
-                                                </tr>
-                    </tbody>
-        </table>
-        <nav>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a href="#" class="page-link py-2 px-3" style="color: black;">
-                            <span>&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item active">
-                         <a href="#" class="page-link py-2 px-3" style="color: black;">
-                             1
-                         </a>
-                     </li>
-                     <li class="page-item">
-                             <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                 2
-                             </a>
-                         </li>
-                         <li class="page-item">
-                                 <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                     3
-                                 </a>
-                             </li>
-                    <li class="page-item">
-                        <a href="#" class="page-link py-2 px-3" style="color: black;">
-                            <span>&raquo;</span>
-                        </a>
-                     </li>
-
-                </ul>
-            </nav>
-
-                        
-                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
      
       <section>
@@ -380,7 +204,7 @@ data-toggle="collapse" data-target="#navbar">
                   <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
                       <div class="row">
                             <div class="col-xl-6 col-12">
-                                    <h4 class="text-dark p-3 mb-3">Tasks.</h4>
+                                    <h4 class="col-sm-9 col-8 row py-3 mb-4 task-border align-items-center container-fluid bg-1">Books.</h4>
                                     <div class="container-fluid bg-1">
                                         <div class="row py-3 mb-4 task-border align-items-center">
                                             <div class="col-1">
