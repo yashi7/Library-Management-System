@@ -1,6 +1,7 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <title>Title</title>
     
@@ -28,29 +29,29 @@ data-toggle="collapse" data-target="#navbar">
                   <img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
                 <div class="bottom-border pb-3">
                     
-                    <p class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;" >{{request.user.username}}</p>
+                    <p class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;" >{{request.user.username}}-{{user.Register_number}}</p>
                 </div>
                 <ul class="navbar-nav flex-column mt-4">
-                   <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                   <li class="nav-item"><a href="{% url 'user_index' %}" class="nav-link text-white p-3 mb-2
                     current"><i class="fas fa-home text-light fa-lg mr-3"></i>
                 Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
                 Profile</a></li>
                
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
                 Books</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
                 Analytics</a></li>
               
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
                 Tables</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
-                Settings</a></li>
+                Log-out</a></li>
                 
 
             </div>
@@ -195,183 +196,7 @@ data-toggle="collapse" data-target="#navbar">
     </section>
 
    
-<section>
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-                <div class="row align-items-center">
-                     <div class="col-xl-6 col-12 mb-4 mb-xl-0">
-                       <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif;">
-                           LIBRARY STAFF
-                       </h3> 
-                       <table class="table table-striped bg-light text-center">
-                           <thead>
-                               <tr class="text-dark">
-                                   <th>#</th>
-                                   <th>Name</th>
-                                   <th>Salary</th>
-                                   <th>Date</th>
-                                   <th>Contact</th>
 
-                               </tr>
-                           </thead>
-                           <tbody>
-                               <tr>
-                                   <th>1</th>
-                                   <td>Jade</td>
-                                   <td>$6000</td>
-                                   <td>10-09-2019</td>
-            <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                               </tr>
-                               <tr>
-                                    <th>2</th>
-                                    <td>Jane</td>
-                                    <td>$5000</td>
-                                    <td>10-09-2019</td>
-             <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                                </tr>
-                                <tr>
-                                        <th>3</th>
-                                        <td>Elon</td>
-                                        <td>$7000</td>
-                                        <td>10-09-2019</td>
-                 <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                                    </tr>
-                                    <tr>
-                                            <th>4</th>
-                                            <td>Dave</td>
-                                            <td>$9000</td>
-                                            <td>10-09-2019</td>
-                     <td><button type="button" class="btn btn-danger btn-sm">Message</button></td>
-                                        </tr>
-                           </tbody>
-                       </table>
-                       
-                       <nav class="color">
-                           <ul class="pagination justify-content-center">
-                               <li class="page-item">
-                                   <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                       <span>&laquo;</span>
-                                   </a>
-                               </li>
-                               <li class="page-item active">
-                                    <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                        1
-                                    </a>
-                                </li>
-                                <li class="page-item" >
-                                        <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li class="page-item" >
-                                            <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                                3
-                                            </a>
-                                        </li>
-                               <li class="page-item">
-                                    <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                        <span>&raquo;</span>
-                                    </a>
-                                </li>
-
-                           </ul>
-                       </nav>
-
-
-
-
-                       
-                      </div>
-                <div class="col-xl-6 col-12">
-        <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif ;">USERS</h3>
-        <table class="table table-color  table-hover">
-                <thead>
-                        <tr class="text-dark">
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Date</th>
-                            <th>Status</th>
-
-                        </tr>
-                    </thead> 
-                    <tbody>
-                            <tr>
-                                    <th>1</th>
-                                    <td>Mike</td>
-                                    <td>$6000</td>
-                                    <td>10-09-2019</td>
-             <td><span class="badge badge-success w-75 py-2">Approved</span></td>
-                                </tr>  
-                                <tr>
-                                        <th>2</th>
-                                        <td>Mark</td>
-                                        <td>$6000</td>
-                                        <td>10-09-2019</td>
-                 <td><span class="badge badge-success w-75 py-2">Approved</span></td>
-                                    </tr>
-                                    <tr>
-                                            <th>3</th>
-                                            <td>David</td>
-                                            <td>$6000</td>
-                                            <td>10-09-2019</td>
-                     <td><span class="badge badge-danger w-75 py-2">Pending</span></td>
-                                        </tr>
-                                        <tr>
-                                                <th>4</th>
-                                                <td>William</td>
-                                                <td>$6000</td>
-                                                <td>10-09-2019</td>
-                         <td><span class="badge badge-danger w-75 py-2">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                    <th>5</th>
-                                                    <td>Joseph</td>
-                                                    <td>$6000</td>
-                                                    <td>10-09-2019</td>
-                             <td><span class="badge badge-success w-75 py-2">Approved</span></td>
-                                                </tr>
-                    </tbody>
-        </table>
-        <nav>
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a href="#" class="page-link py-2 px-3" style="color: black;">
-                            <span>&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item active">
-                         <a href="#" class="page-link py-2 px-3" style="color: black;">
-                             1
-                         </a>
-                     </li>
-                     <li class="page-item">
-                             <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                 2
-                             </a>
-                         </li>
-                         <li class="page-item">
-                                 <a href="#" class="page-link py-2 px-3" style="color: black;">
-                                     3
-                                 </a>
-                             </li>
-                    <li class="page-item">
-                        <a href="#" class="page-link py-2 px-3" style="color: black;">
-                            <span>&raquo;</span>
-                        </a>
-                     </li>
-
-                </ul>
-            </nav>
-
-                        
-                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
      
       <section>
@@ -380,7 +205,7 @@ data-toggle="collapse" data-target="#navbar">
                   <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
                       <div class="row">
                             <div class="col-xl-6 col-12">
-                                    <h4 class="text-dark p-3 mb-3">Tasks.</h4>
+                                    <h4 class="col-sm-9 col-8 row py-3 mb-4 task-border align-items-center container-fluid bg-1">Books.</h4>
                                     <div class="container-fluid bg-1">
                                         <div class="row py-3 mb-4 task-border align-items-center">
                                             <div class="col-1">
@@ -589,3 +414,138 @@ data-toggle="collapse" data-target="#navbar">
     
   </body>
 </html>
+=======
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK RECORDS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      animation: slideInUp 1s ease-in-out;
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin-top: 20px;
+      animation: slideInRight 1s ease-in-out;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.02);
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>  
+  <h1>RECORD OF BOOKS</h1>
+
+  <table>
+    <thead>  
+      <tr>
+        <th>BOOK TITLE</th>
+        <th>AUTHOR</th>
+        <th>STATUS</th>
+        <th>COUNT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Add rows dynamically using JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    // Dummy data for demonstration purposes
+    const booksData = [
+      { title: 'Book 1', author: 'Author 1', status: 'Returned', count: 5 },
+      { title: 'Book 2', author: 'Author 1', status: 'Borrowed', count: 3 },
+      { title: 'Book 3', author: 'Author 2', status: 'Returned', count: 2 },
+      { title: 'Book 4', author: 'Author 2', status: 'Borrowed', count: 4 },
+      { title: 'Book 5', author: 'Author 2', status: 'Returned', count: 3 },
+      { title: 'Book 6', author: 'Author 2', status: 'Returned', count: 8 },
+      { title: 'Book 7', author: 'Author 3', status: 'Borrowed', count: 10},
+      { title: 'Book 8', author: 'Author 3', status: 'Returned', count: 8},
+      { title: 'Book 9', author: 'Author 4', status: 'Borrowed', count: 5 },
+      { title: 'Book 10', author: 'Author 5', status: 'Returned', count: 8 },
+      { title: 'Book 11', author: 'Author 5', status: 'Returned', count: 2 },
+      { title: 'Book 12', author: 'Author 6', status: 'Returned', count: 3 },
+      { title: 'Book 13', author: 'Author 7', status: 'Borrowed', count: 4 }
+    ];
+
+    const tbody = document.querySelector('tbody');
+
+    // Populate the table with data with a slight delay for animation effect
+    setTimeout(() => {
+      booksData.forEach(book => {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${book.title}</td><td>${book.author}</td><td>${book.status}</td><td>${book.count}</td>`;
+        tbody.appendChild(row);
+      });
+    }, 500);
+  </script>
+
+</body>
+</html>
+>>>>>>> ce3fe0e5c1caec1554bf0781f137d6828b141a72

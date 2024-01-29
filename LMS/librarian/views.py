@@ -4,22 +4,25 @@ from django.contrib.auth import authenticate,login
 from django.contrib.auth.decorators import login_required
 from .models import user_new
 
-# result=[]
+result=[]
 def index(request):
     return render(request, 'librarian/index.html')
 def loginpage(request):
     if request.method=='POST':
         username=request.POST.get('username')
         pass1=request.POST.get('password')
-        result=user_new.objects.filter(Username=username)
-        print(result[0].Username)
-        print(result[0].Register_number)
-        print(result[0].Email)
-        print(result[0].Login_as)
+        # print(result[0].Username)
+        # print(result[0].Register_number)
+        # print(result[0].Email)
+        # print(result[0].Login_as)
         user=authenticate(request,username=username,password=pass1)
+        
         if user is not None:
+            result=user_new.objects.filter(Username=username)
+            data=result[0]
             login(request,user)
-            return redirect('user_index')
+            # request.session['user_data']=data
+            return render(request, 'librarian/user.html',{'user':data})
         else:
             return HttpResponse("username or password is incorrect")
         
@@ -42,7 +45,7 @@ def register(request):
                       Email=email,
                       Register_number=RegisterNo,
                       Login_as=Login_As)
-        print('login as=',Login_As)
+        # print('login as=',Login_As)
         user.save()
         
         return redirect('login')
@@ -60,14 +63,17 @@ def help(request):
 #     user = request.user  
 #     context={'user': user }
 #     return render(request,'librarian/user.html')
-
+def tables(request):
+    return render(request, 'librarian/tables.html')
+def books(request):
+    return render(request, 'librarian/books.html')
+def profile(request):
+    usernm=request.user.username
+    result=user_new.objects.filter(Username=usernm)
+    data=result[0]
+    return render(request, 'librarian/profile.html',{'user_details':data})
+def analytics(request):
+    return render(request, 'librarian/analytics.html')
 
 def user_index(request):
-    
-    # context={
-    #     'registration':result[0].Register_number,
-    #     'user_type':result[0].Login_as
-    # }
     return render(request, 'librarian/user.html')
-
-
