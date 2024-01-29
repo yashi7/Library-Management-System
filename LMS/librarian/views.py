@@ -21,6 +21,7 @@ def loginpage(request):
             result=user_new.objects.filter(Username=username)
             data=result[0]
             login(request,user)
+            # request.session['user_data']=data
             return render(request, 'librarian/user.html',{'user':data})
         else:
             return HttpResponse("username or password is incorrect")
@@ -44,7 +45,7 @@ def register(request):
                       Email=email,
                       Register_number=RegisterNo,
                       Login_as=Login_As)
-        print('login as=',Login_As)
+        # print('login as=',Login_As)
         user.save()
         
         return redirect('login')
@@ -67,7 +68,10 @@ def tables(request):
 def books(request):
     return render(request, 'librarian/books.html')
 def profile(request):
-    return render(request, 'librarian/profile.html')
+    usernm=request.user.username
+    result=user_new.objects.filter(Username=usernm)
+    data=result[0]
+    return render(request, 'librarian/profile.html',{'user_details':data})
 def analytics(request):
     return render(request, 'librarian/analytics.html')
 
