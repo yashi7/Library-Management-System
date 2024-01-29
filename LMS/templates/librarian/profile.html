@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/c0fc838bea.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="{% static 'styles/profile.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'styles\user.css' %}">
@@ -33,30 +33,30 @@
 
                             <p class="text-white "
                                 style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">
-                                {{request.user.username}}-{{user.Register_number}}</p>
+                                {{request.user.username}}-{{user_details.Register_number}}</p>
                         </div>
                         <ul class="navbar-nav flex-column mt-4">
                             <li class="nav-item"><a href="{% url 'user_index' %}" class="nav-link text-white p-3 mb-2
                                 sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>
-                         Dashboard</a></li>
-                         <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
+                                    Dashboard</a></li>
+                            <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
                             current"><i class="fas fa-user text-light fa-lg mr-3"></i>
-                         Profile</a></li>
-                        
-                         <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
+                                    Profile</a></li>
+
+                            <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
                              sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
-                         Books</a></li>
-                         <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
+                                    Books</a></li>
+                            <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
                              sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
-                         Analytics</a></li>
-                       
-                         <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
+                                    Analytics</a></li>
+
+                            <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
                              sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
-                         Tables</a></li>
-                         <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
+                                    Tables</a></li>
+                            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
                              sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
-                         Log-out</a></li>
-                         
+                                    Log-out</a></li>
+
 
 
                     </div>
@@ -120,27 +120,52 @@
             <div class="row">
                 <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
                     <div class="row pt-md-5 mt-md-3 mb-5">
-                        <div class="col-xl-3 col-sm-6 p-2">
-                            <div class="card card-common">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between">
-                                       
-                                        <div class=" text-dark">
-                                            <h5>{{user.Username}}</h5>
-                                            <h3>{{user.Register_number}}</h3>
-                                            <h3>{{user.Email}}</h3>
-                                            
-                                        </div>
+                        <div class="col-xl-10 col-sm-6 p-0">
+                            <div class="main">
+                                <h2 style="color: azure; font-family: 'Times New Roman', Times, serif;">
+                                    <center>Profile Details</center>
+                                </h2>
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <td>:</td>
+                                                    <td style="text-transform: capitalize;">{{user_details.Username}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Email</th>
+                                                    <td>:</td>
+                                                    <td>{{user_details.Email}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Register Number</th>
+                                                    <td>:</td>
+                                                    <td>{{user_details.Register_number}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Role</th>
+                                                    <td>:</td>
+                                                    <td>{{user_details.Login_as}}</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-                                <div class="card-footer text-dark">
-                                   
-                                    <span>{{user.login_as}}</span>
-                                </div>
+
+
                             </div>
+
+
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
     </section>
 
@@ -151,42 +176,15 @@
 
 
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-3 bd-bottom">
-                <div class="row border-top pt-3">
-                    <div class="col-lg-6 text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item mr-2">
-                                <a href="#" class="text-light">
-                                    Company Name
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-2">
-                                <a href="#" class="text-light">
-                                    About
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-2">
-                                <a href="#" class="text-light">
-                                    Support
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-2">
-                                <a href="#" class="text-light">
-                                    Blog
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 text-center text-light">
-                        <p>&copy; 2019 Copyright</p>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <div style="margin-left:6%; margin-top: 2%;" class="container-fluid">
+        <span style="text-align: center;color: white; position:relative; bottom: 0%;">
+            <p>&copy; 2024 Library Management System</p>
+        </span>
     </div>
+
+    
 
 
 
