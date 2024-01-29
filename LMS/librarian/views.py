@@ -1,35 +1,51 @@
 from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login
+from django.contrib.auth.decorators import login_required
+from .models import user_new
 
+result=[]
 def index(request):
     return render(request, 'librarian/index.html')
 def loginpage(request):
     if request.method=='POST':
         username=request.POST.get('username')
         pass1=request.POST.get('password')
+        # print(result[0].Username)
+        # print(result[0].Register_number)
+        # print(result[0].Email)
+        # print(result[0].Login_as)
         user=authenticate(request,username=username,password=pass1)
+        
         if user is not None:
+            result=user_new.objects.filter(Username=username)
+            data=result[0]
             login(request,user)
-            return redirect('index')
+            return render(request, 'librarian/user.html',{'user':data})
         else:
             return HttpResponse("username or password is incorrect")
-
+        
         
     return render(request, 'librarian/login.html')
 def register(request):
     if request.method=='POST':
         username=request.POST.get('UserName')
         # userid=request.POST.get('User_ID')
-        Email=request.POST.get('email')
+        email=request.POST.get('email')
         pass1=request.POST.get('password')
         pass2=request.POST.get('confirmPassword')
+        Login_As=request.POST.get('role')
+        RegisterNo=request.POST.get('regno')
 
-        # if pass1!=pass2:
-        # #     return HttpResponse("your password and confirm password are not same!!")
-        # else:
-        my_user=User.objects.create_user(username,Email,pass1)
+        my_user=User.objects.create_user(username,email,pass1)
         my_user.save()
+
+        user=user_new(Username=username,
+                      Email=email,
+                      Register_number=RegisterNo,
+                      Login_as=Login_As)
+        print('login as=',Login_As)
+        user.save()
         
         return redirect('login')
         
@@ -41,6 +57,23 @@ def contactus(request):
     return render(request, 'librarian/contact_us.html')
 def help(request):
     return render(request, 'librarian/help.html')
+# @login_required
+# def user(request):
+#     user = request.user  
+#     context={'user': user }
+#     return render(request,'librarian/user.html')
+def tables(request):
+    return render(request, 'librarian/tables.html')
+def books(request):
+    return render(request, 'librarian/books.html')
+def profile(request):
+    return render(request, 'librarian/profile.html')
+def analytics(request):
+    return render(request, 'librarian/analytics.html')
 
-
-
+def user_index(request):
+    return render(request, 'librarian/user.html')
+def rules(request):
+    return render(request, 'librarian/r.html')
+def feedback(request):
+    return render(request, 'librarian/feedback.html')
