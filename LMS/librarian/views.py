@@ -82,12 +82,9 @@ def analytics(request):
 
 def user_index(request):
     return render(request, 'librarian/user.html')
-<<<<<<< HEAD
 def lib(request):
     return render(request, 'librarian/librarian.html')
-=======
 def rules(request):
     return render(request, 'librarian/r.html')
 def feedback(request):
     return render(request, 'librarian/feedback.html')
->>>>>>> ee300f917b097414573bcf7853df2c288f7c5cab
