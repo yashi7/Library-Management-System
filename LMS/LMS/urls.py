@@ -16,11 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-<<<<<<< HEAD
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,analytics,lib
-=======
 from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,analytics,rules,feedback
->>>>>>> ee300f917b097414573bcf7853df2c288f7c5cab
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,11 +32,7 @@ urlpatterns = [
     path('books/',books,name='books'),
     path('tables/',tables,name='tables'),
     path('analytics/',analytics,name='analytics'),
-<<<<<<< HEAD
-    path('lib/',lib,name='lib'),
-=======
     path('rules/',rules,name='r'),
     path('feedback/',feedback,name='feedback'),
->>>>>>> ee300f917b097414573bcf7853df2c288f7c5cab
 ]
 
