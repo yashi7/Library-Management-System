@@ -13,6 +13,9 @@
             position: relative;
             text-align: center;
             z-index: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -77,10 +80,7 @@
         img {
             width: 100%;
             height: auto;
-            
-            
             margin: 0 auto;
-            
         }
 
         img.overlay {
@@ -91,7 +91,32 @@
             width: 90%;
             height: auto;
             object-fit: cover;
-            z-index:1;
+            z-index: 1;
+        }
+
+        footer {
+            background-color: #ebe4e468;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            margin-top: 700px;
+        }
+
+        footer span {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer h3 {
+            margin: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            text-align: left;
         }
     </style>
 </head>
@@ -107,6 +132,7 @@
             <h2><a href="{% url 'help' %}"><b style="color: white;">HELP?</b></a></h2>
         </div>
     </header>
+<<<<<<< HEAD
     <!-- <div class="search-bar">
         <input type="text" placeholder="Search">
         <button type="button">&#x1F50D;</button>
@@ -115,10 +141,43 @@
     <br>
     <div class="image-container"  >
         <img src="{% static 'Images/4-removebg-preview (1) (2) (1).png' %}" alt="Christ Image" class="overlay" style="margin-top: 22%; ">
-    </div>
-    <br>
-    <br>
-    <br>
+=======
     
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button type="button">&#x1F50D;</button>
+    </div>
+
+    <div class="image-container">
+        <img src="{% static 'Images/4-removebg-preview (1) (2) (1).png' %}" alt="Christ Image" class="overlay" style="margin-top: 22%;">
+>>>>>>> ee300f917b097414573bcf7853df2c288f7c5cab
+    </div>
+
+    <footer>
+        <span>
+            <h3 id="feedback"><a href="{% url 'feedback' %}">Feedback</a></h3>
+            <h3 id="rules"><a href="{% url 'r' %}">Rules and Regulations</a></h3>
+            <h3 id="contacts">More Contacts</h3>
+        </span>        
+    </footer>
+
+    <script>
+        document.getElementById('feedback').addEventListener('click', function () {
+            toggleDropdown('feedbackContent');
+        });
+
+        document.getElementById('rules').addEventListener('click', function () {
+            toggleDropdown('rulesContent');
+        });
+
+        document.getElementById('contacts').addEventListener('click', function () {
+            toggleDropdown('contactsContent');
+        });
+
+        function toggleDropdown(contentId) {
+            var content = document.getElementById(contentId);
+            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
