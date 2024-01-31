@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index, name='index'),
