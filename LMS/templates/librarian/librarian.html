@@ -2,16 +2,13 @@
 <html lang="en">
   <head>
     <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/c0fc838bea.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="librarian.css">
 </head>
   <body style="background-image: url(Images/image1.jpg); font-family: 'Times New Roman', Times, serif;">
-     <!---Nav bar-->
       <nav class="navbar navbar-expand-md navbar-light">
 <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" 
 data-toggle="collapse" data-target="#navbar">
@@ -21,7 +18,6 @@ data-toggle="collapse" data-target="#navbar">
 <div class="collapse navbar-collapse" id="navbar">
     <div class="container-fluid">
         <div class="row">
-            <!---Sidebar-->
             <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
                 <a href="#" class="navbar-brand text-white d-block
                 mx-auto text-center py-3 mb-4"><img src="Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png"></a>
@@ -30,38 +26,29 @@ data-toggle="collapse" data-target="#navbar">
                     <a href="#" class="text-white " style="font-family: 'Times New Roman', Times, serif;">John Doe</a>
                 </div>
                 <ul class="navbar-nav flex-column mt-4">
-                   <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    current"><i class="fas fa-home text-light fa-lg mr-3"></i>
-                Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
-                Profile</a></li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>
-                inbox</a></li> -->
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
-                Books</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
-                Analytics</a></li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>
-                charts</a></li> -->
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
-                Tables</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
-                Settings</a></li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>
-                documentation</a></li>
-                </ul> -->
+                    <li class="nav-item"><a href="{% url 'user_index' %}" class="nav-link text-white p-3 mb-2
+                        sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>
+                            Dashboard</a></li>
+                    <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
+                    current"><i class="fas fa-user text-light fa-lg mr-3"></i>
+                            Profile</a></li>
+
+                    <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
+                     sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
+                            Books</a></li>
+                    <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
+                     sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
+                            Analytics</a></li>
+
+                    <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
+                     sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
+                            Tables</a></li>
+                    <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
+                     sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
+                            Log-out</a></li>
+                </ul>            
 
             </div>
-            <!---end of side bar-->
-            <!---Top Nav-->
 <div class="col-xl-10 col-lg-9 col-md-8 ml-auto top-bar  py-2 top-nav">
     <div class="row align-item-center">
    <div class="col-md-4">
@@ -90,13 +77,10 @@ data-toggle="collapse" data-target="#navbar">
    </div>
         </div>
 </div>
-            <!---End of Top Nav-->
         </div>
     </div>
 </div>
       </nav>
-      <!----End of Navbar-->
-      <!---Modal-->
       <div class="modal" id="sign-out">
           <div class="modal-dialog">
              <div class="modal-content">
@@ -117,8 +101,7 @@ data-toggle="collapse" data-target="#navbar">
               </div>
           </div>
       </div>
-      <!---End of Modal-->
-      <!---Cards-->
+
     <section>
  <div class="container-fluid">
      <div class="row">
@@ -203,8 +186,6 @@ data-toggle="collapse" data-target="#navbar">
      
     </section>
 
-      <!---End of Cards-->
-      <!--table-->
 <section>
     <div class="container-fluid">
         <div class="row mb-5">
@@ -256,7 +237,6 @@ data-toggle="collapse" data-target="#navbar">
                                         </tr>
                            </tbody>
                        </table>
-                       <!---Pagination-->
                        <nav class="color">
                            <ul class="pagination justify-content-center">
                                <li class="page-item">
@@ -289,9 +269,6 @@ data-toggle="collapse" data-target="#navbar">
                        </nav>
 
 
-
-
-                       <!---End of Pagination-->
                       </div>
                 <div class="col-xl-6 col-12">
         <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif ;">USERS</h3>
@@ -383,8 +360,7 @@ data-toggle="collapse" data-target="#navbar">
     </div>
 </section>
 
-      <!--End of table-->
-      <!---Quick post-->
+
       <section>
           <div class="container-fluid">
               <div class="row">
@@ -489,8 +465,7 @@ data-toggle="collapse" data-target="#navbar">
                                       </div>
                                   </div>
                                   </div>
-                                  <!---End of Task List-->
-            <!---Quick Post--->                      
+                         
          <div class="col-xl-6 mt-5">
             <div class="card rounded">
              <div class="card-body">
@@ -559,8 +534,7 @@ data-toggle="collapse" data-target="#navbar">
           </div>
       </section>
       
-      <!---End of Quick post-->
-      <!----Footer-->
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-3 bd-bottom">
@@ -597,10 +571,7 @@ data-toggle="collapse" data-target="#navbar">
         </div>
     </div>
 </div>
-      <!---End of Footer-->
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -22,7 +22,12 @@ def loginpage(request):
             data=result[0]
             login(request,user)
             # request.session['user_data']=data
-            return render(request, 'librarian/user.html',{'user':data})
+            if data.Login_as=='User':
+                return render(request, 'librarian/user.html',{'user':data})
+            elif data.Login_as=='Librarian':
+                return render(request, 'librarian/librarian.html',{'user':data})
+            elif data.Login_as=='Admin':
+                return render(request, 'librarian/index.html',{'user':data})
         else:
             return HttpResponse("username or password is incorrect")
         
@@ -77,3 +82,5 @@ def analytics(request):
 
 def user_index(request):
     return render(request, 'librarian/user.html')
+def lib(request):
+    return render(request, 'librarian/librarian.html')
