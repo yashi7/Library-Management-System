@@ -59,3 +59,31 @@ button:hover {
     color: red;
     font-weight: bold;
 }
+
+.container {
+   
+    transition: transform 0.5s ease; /* Add transition property for smooth slide animation */
+}
+
+.slide-out {
+    animation: slideOutAnimation 0.5s ease forwards;
+}
+
+@keyframes slideOutAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
