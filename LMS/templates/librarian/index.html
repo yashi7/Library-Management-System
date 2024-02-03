@@ -66,15 +66,8 @@
             cursor: pointer;
         }
     
-        /* .a {
-            text-decoration: none;
-            font-family: 'Times New Roman', Times, serif;
-            transition: 0.3s ease-in-out; /* Transition for text color */
-         
-    
         a:hover {
             transform: scale(1.1); 
-            /* text-decoration: none; */
             text-decoration: underline;
             color: burlywood;
         }
@@ -123,14 +116,14 @@
             justify-content: space-around;
         }
     
-        footer h2 {
+        footer h5 {
             margin: 0;
             cursor: pointer;
             user-select: none;
             transition: transform 0.3s ease-in-out;
         }
     
-        footer h2:hover {
+        footer h5:hover {
             transform: scale(1.1);
         }
     
@@ -159,21 +152,21 @@
         }
     
         .book:hover {
-            transform: scale(1.2); /* Scale effect on hover */
+            transform: scale(1.2);
         }
     
         .book.expanded {
             position: absolute;
             top: 0;
             left: 0;
-            width: 150px; /* Adjust the expanded size as needed */
-            height: 300px; /* Adjust the expanded size as needed */
+            width: 150px;
+            height: 300px;
             z-index: 2;
-            transform: scale(1.5); /* Adjust the scale factor as needed */
+            transform: scale(1.5);
         }
     
         .book.expanded:hover {
-            transform: scale(1.5); /* Keep the scale factor consistent on hover */
+            transform: scale(1.5);
         }
     
         @keyframes bookAnimation {
@@ -194,7 +187,7 @@
         .animated-letter {
             display: inline-block;
             transform-origin: 50% 50%;
-            animation: bounceIn 0.5s ease infinite alternate; /* Modified animation property */
+            animation: bounceIn 0.5s ease infinite alternate;
         }
 
         @keyframes bounceIn {
@@ -208,6 +201,27 @@
             }
         }
 
+        .see-more-link {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .see-more-link:hover {
+        animation: seeMoreAnimation 0.5s ease-in-out infinite alternate; 
+        text-decoration: none; 
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    @keyframes seeMoreAnimation {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
     </style>
     
 </head>
@@ -294,6 +308,9 @@
       <span class="animated-letter">O</span>
       <span class="animated-letter">P</span>
       <span class="animated-letter">&nbsp;</span>
+      <span class="animated-letter">1</span>
+      <span class="animated-letter">5</span>
+      <span class="animated-letter">&nbsp;</span>
       <span class="animated-letter">P</span>
       <span class="animated-letter">I</span>
       <span class="animated-letter">C</span>
@@ -349,11 +366,10 @@
     <div class="book-container" >
         <img src="{% static 'Images/book15.jpg' %}" alt="Book 15" class="book">
     </div>
-    <!-- Add more books as needed -->
     </div>
 
     <div style="text-align: center; margin-top: 20px;">
-        <a href="{% url 'seemore' %}" style="color: white; font-size: 18px;"><b>See More</b></a>
+        <a href="{% url 'seemore' %}" class="see-more-link"><b>See More</b></a>
     </div>
 
     <footer>
@@ -402,7 +418,6 @@
             });
         });
     </script>
-    <!-- Bootstrap JS and Popper.js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

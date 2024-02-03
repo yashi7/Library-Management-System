@@ -3,34 +3,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHRIST UNIVERSITY LIBRARY</title>
-    <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHRIST UNIVERSITY LIBRARY</title>
+  <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      align-items: center;  
       height: 100vh;
-      background-color: #f4f4f4;
+      background-image: url('{% static "Images/image1.jpg" %}'); 
       animation: fadeIn 1s ease-in-out;
-    }
-
-    h1 {
-      animation: slideInUp 1s ease-in-out;
-      color: #333;
-      margin-left: 10%;
-      margin-bottom: 20px;
     }
 
     .container {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column; 
       width: 80%;
+      color: aliceblue;
+      margin-top: 20%;
     }
 
     table {
@@ -38,57 +34,36 @@
       width: 60%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-right: 20px;
+      margin-top: 250%; 
       animation: slideInLeft 1s ease-in-out;
     }
 
     th, td {
       border: 1px solid #ddd;
       padding: 12px;
-      text-align: left;
+      text-align: center;
+      vertical-align: middle; 
       transition: background-color 0.3s ease-in-out;
     }
 
     th {
-      background-color: lightblue;
-      color: black;
+      background-color: burlywood;
+      color: whitesmoke;
     }
 
     tr:nth-child(even) {
-      background-color: #f7f7f7;
+      /* background-color: #f7f7f7; */
     }
 
     tr:hover {
-      background-color: lightcyan;
+      background-color: beige;
+      color: black;
       transform: scale(1.02);
     }
 
-    .form {
-      width: 30%;
-      margin-left: 10%;
-      animation: slideInRight 1s ease-in-out;
-    }
-
-    label {
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    input {
-      padding: 8px;
-      margin-bottom: 16px;
-      width: 100%;
-    }
-
-    button {
-      padding: 10px;
-      background-color: lightblue;
-      color: black;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    button:hover {
-      background-color: #99c2ff;
+    .book-image {
+      max-width: 100px; 
+      height: auto;     
     }
 
     @keyframes fadeIn {
@@ -121,126 +96,198 @@
         opacity: 1;
       }
     }
-
-    @keyframes slideInRight {
-      from {
-        transform: translateX(-50px);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
   </style>
 </head>
 <body>  
-  <h1><b>RECORD OF BOOKS</b></h1>
-
   <div class="container">
     <table>
       <thead>  
         <tr>
-          <th>BOOK TITLE</th>
-          <th>AUTHOR</th>
+          <th>BOOK IMAGE</th>
+          <th>BOOK ID</th>
+          <th>BOOK NAME</th>
+          <th>AUTHOR NAME</th>
           <th>STATUS</th>
-          <th>CURRENT COUNT</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Book 1</td>
-          <td>Author 1</td>
-          <td>Returned</td>
-          <td>5</td>
+          <td><img class="book-image" src="{% static 'Images/book1.jpg' %}" alt="Book Image"></td>
+          <td>001</td>
+          <td>MILK AND HONEY</td>
+          <td>RUPI KAUR</td>
+          <td>RETURNED</td>
         </tr>
         <tr>
-          <td>Book 2</td>
-          <td>Author 1</td>
-          <td>Borrowed</td>
-          <td>3</td>
+          <td><img class="book-image" src="{% static 'Images/book2.jpg' %}" alt="Book Image"></td>
+          <td>002</td>
+          <td>ROMEO AND JULIET</td>
+          <td>WILLIAM SHAKESPEARE</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 3</td>
-          <td>Author 2</td>
-          <td>Returned</td>
-          <td>2</td>
+          <td><img class="book-image" src="{% static 'Images/book3.jpg' %}" alt="Book Image"></td>
+          <td>003</td>
+          <td>THE CHRONICLES OF NARNIA</td>
+          <td>C.S. LEWIS</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 4</td>
-          <td>Author 2</td>
-          <td>Borrowed</td>
-          <td>4</td>
+          <td><img class="book-image" src="{% static 'Images/book4.jpg' %}" alt="Book Image"></td>
+          <td>004</td>
+          <td>YOUR SOUL IS A RIVER</td>
+          <td>NIKITA GILL</td>
+          <td>RETURNED</td>
         </tr>
         <tr>
-          <td>Book 5</td>
-          <td>Author 2</td>
-          <td>Returned</td>
-          <td>3</td>
+          <td><img class="book-image" src="{% static 'Images/book5.jpg' %}" alt="Book Image"></td>
+          <td>005</td>
+          <td>THE TWO TOWERS</td>
+          <td>J.R.R. TOLKIEN</td>
+          <td>RETURNED</td>
         </tr>
         <tr>
-          <td>Book 6</td>
-          <td>Author 2</td>
-          <td>Returned</td>
-          <td>8</td>
+          <td><img class="book-image" src="{% static 'Images/book6.jpg' %}" alt="Book Image"></td>
+          <td>006</td>
+          <td>SCULPTURE</td>
+          <td>TUSCHEN</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 7</td>
-          <td>Author 3</td>
-          <td>Borrowed</td>
-          <td>10</td>
+          <td><img class="book-image" src="{% static 'Images/book7.jpg' %}" alt="Book Image"></td>
+          <td>007</td>
+          <td>HAMLET</td>
+          <td>WILLIAM SHAKESPEARE</td>
+          <td>RETURNED</td>
         </tr>
         <tr>
-          <td>Book 8</td>
-          <td>Author 3</td>
-          <td>Returned</td>
-          <td>8</td>
+          <td><img class="book-image" src="{% static 'Images/book8.jpg' %}" alt="Book Image"></td>
+          <td>008</td>
+          <td>HARRY POTTER AND THE PRISONER OF AZKABAN</td>
+          <td>J.K. ROWLING</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 9</td>
-          <td>Author 4</td>
-          <td>Borrowed</td>
-          <td>5</td>
+          <td><img class="book-image" src="{% static 'Images/book9.jpg' %}" alt="Book Image"></td>
+          <td>009</td>
+          <td>GOOD OR GODS</td>
+          <td>JOHN BEVERE</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 10</td>
-          <td>Author 5</td>
-          <td>Returned</td>
-          <td>8</td>
+          <td><img class="book-image" src="{% static 'Images/book10.jpg' %}" alt="Book Image"></td>
+          <td>010</td>
+          <td>COMAPNY OF ONE</td>
+          <td>PAUL JARVIS</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 11</td>
-          <td>Author 5</td>
-          <td>Returned</td>
-          <td>2</td>
+          <td><img class="book-image" src="{% static 'Images/book11.jpg' %}" alt="Book Image"></td>
+          <td>011</td>
+          <td>Da Lat</td>
+          <td>NGUYEN VINH NGUYEN</td>
+          <td>RETURNED</td>
         </tr>
         <tr>
-          <td>Book 12</td>
-          <td>Author 6</td>
-          <td>Returned</td>
-          <td>3</td>
+          <td><img class="book-image" src="{% static 'Images/book12.jpg' %}" alt="Book Image"></td>
+          <td>012</td>
+          <td>PRIDE AND PREJUDICE</td>
+          <td>JANE AUSTEN</td>
+          <td>BORROWED</td>
         </tr>
         <tr>
-          <td>Book 13</td>
-          <td>Author 7</td>
-          <td>Borrowed</td>
-          <td>4</td>
+          <td><img class="book-image" src="{% static 'Images/book13.jpg' %}" alt="Book Image"></td>
+          <td>013</td>
+          <td>A NEW TESTAMENT</td>
+          <td>G.K. BEALE</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book14.jpg' %}" alt="Book Image"></td>
+          <td>014</td>
+          <td>THE IMPERIAL GAZETTER OF SCOTLAND</td>
+          <td>A. FULLATRON & CO.</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book15.jpg' %}" alt="Book Image"></td>
+          <td>015</td>
+          <td>VISUAL GRAMMAR</td>
+          <td>CHRISTIAN LEBORG</td>
+          <td>RETURNED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book16.jpg' %}" alt="Book Image"></td>
+          <td>016</td>
+          <td>HOW INNOVATION WORKS</td>
+          <td>MATT RIDLEY</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book17.jpg' %}" alt="Book Image"></td>
+          <td>017</td>
+          <td>101 ESSAYS THAT WILL CHANGE YOUR LIFE</td>
+          <td>BRIANNA WEIST</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book18.jpg' %}" alt="Book Image"></td>
+          <td>018</td>
+          <td>VAMPYRES</td>
+          <td>CHRISTOPHER FRAYLING</td>
+          <td>RETURNED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book19.jpg' %}" alt="Book Image"></td>
+          <td>019</td>
+          <td>DESIGN ANTHOLOGY</td>
+          <td></td>
+          <td>RETURNED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book20.jpg' %}" alt="Book Image"></td>
+          <td>020</td>
+          <td>BEAUTIFUL RESISTANCE</td>
+          <td>JON TYSON</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book21.jpg' %}" alt="Book Image"></td>
+          <td>021</td>
+          <td>FAILED IT!</td>
+          <td>ERIK KESSELS</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book22.jpg' %}" alt="Book Image"></td>
+          <td>022</td>
+          <td>THE PICTURE OF DORIAN GRAY</td>
+          <td>OSCAR WILDE</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book23.jpg' %}" alt="Book Image"></td>
+          <td>023</td>
+          <td>THE DIARY OF A BOOKSELLER</td>
+          <td>KAREN ZHAO</td>
+          <td>BORROWED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book24.jpg' %}" alt="Book Image"></td>
+          <td>024</td>
+          <td>CEREL</td>
+          <td>MARISSA GROOTES</td>
+          <td>RETURNED</td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book25.jpg' %}" alt="Book Image"></td>
+          <td>025</td>
+          <td>THE SUN AND HER FLOWERS</td>
+          <td>RUPI KAUR</td>
+          <td>BORROWED</td>
         </tr>
       </tbody>
     </table>
-
-    <form class="form">
-      <label for="userName">User Name:</label>
-      <input type="text" id="userName" name="userName" placeholder="Enter user name">
-
-      <label for="bookId">Book ID:</label>
-      <input type="text" id="bookId" name="bookId" placeholder="Enter book ID">
-
-      <label for="bookName">Book Name:</label>
-      <input type="text" id="bookName" name="bookName" placeholder="Enter book name">
-
-      <button type="submit">Submit</button>
-    </form>
   </div>
 
 </body>
