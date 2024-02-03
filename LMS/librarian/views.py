@@ -87,3 +87,5 @@ def rules(request):
     return render(request, 'librarian/r.html')
 def feedback(request):
     return render(request, 'librarian/feedback.html')
+def seemore(request):
+    return render(request, 'librarian/seemore.html')

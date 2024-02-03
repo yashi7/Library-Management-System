@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback
+from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback,seemore
 
 
 urlpatterns = [
@@ -36,5 +36,6 @@ urlpatterns = [
     path('lib/',lib,name='lib'),
     path('rules/',rules,name='r'),
     path('feedback/',feedback,name='feedback'),
+    path('seemore/',seemore,name='seemore'),
 ]
 
