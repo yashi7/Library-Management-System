@@ -89,3 +89,5 @@ def feedback(request):
     return render(request, 'librarian/feedback.html')
 def seemore(request):
     return render(request, 'librarian/seemore.html')
+def members(request):
+    return render(request, 'librarian/members.html')

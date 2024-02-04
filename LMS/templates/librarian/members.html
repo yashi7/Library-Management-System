@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHRIST UNIVERSITY LIBRARY</title>
+  <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      flex-direction: column; 
+      height: 100vh;
+      background-image: url('{% static "Images/image1.jpg" %}'); 
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      flex-direction: column; 
+      width: 80%;
+      color: aliceblue;
+      margin-top: 20%;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+      margin-bottom: 30%;
+      animation: slideInLeft 1s ease-in-out;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      vertical-align: middle; 
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    th {
+      background-color: burlywood;
+      color: whitesmoke;
+    }
+
+    tr:nth-child(even) {
+      /* background-color: #f7f7f7; */
+    }
+
+    tr:hover {
+      background-color: beige;
+      color: black;
+      transform: scale(1.02);
+    }
+
+    .book-image {
+      max-width: 100px; 
+      height: auto;     
+    }
+
+    .heading {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 5%;
+      margin-top: 15%;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>  
+
+  <div class="container">
+    <div class="heading">OUR MEMBERS</div>
+    <table>
+      <thead>  
+        <tr>
+          <th>IMAGE</th>
+          <th>NAME</th>
+          <th>DESIGNATION</th>
+          <th>CONTACTS</th>
+          <th>RESPONSIBILITY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book1.jpg' %}" alt="Book Image"></td>
+          <td>ANURAG YADAV</td>
+          <td>CHIEF LIBRARY OFFICER</td>
+          <td>
+            <li>Phone: 7055070679</li>
+            <li>Email: anurag.yadav@msds.christuniversity.in</li>
+          </td>
+          <td>
+            <li>Head of the Library</li>
+            <li>Statistics and Analysis</li>
+          </td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book2.jpg' %}" alt="Book Image"></td>
+          <td>SIDDHARTHA SINHA</td>
+          <td>ASSISTANT LIBRARIAN</td>
+          <td>
+            <li>Phone: 8582873442</li>
+            <li>Email: siddhartha.sinha@msds.christuniversity.in</li>
+          </td>
+          <td>
+            <li>Handling Book Circulations</li>
+            <li>Book Management</li>
+            <li>Feedback Handling</li>
+          </td>
+        </tr>
+        <tr>
+          <td><img class="book-image" src="{% static 'Images/book3.jpg' %}" alt="Book Image"></td>
+          <td>YASHI</td>
+          <td>ASSISTANT LIBRARIAN</td>
+          <td>
+            <li>Phone: 9457945944</li>
+            <li>Email: yashi@msds.christuniversity.in</li>
+          </td>
+          <td>
+            <li>User Registration and Management</li>
+            <li>Penalty Management</li>
+            <li>Security and Access</li>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
