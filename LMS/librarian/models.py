@@ -11,6 +11,3 @@ class user_new(models.Model):
     Email = models.CharField(max_length=200)
     Register_number = models.CharField(max_length=200)
     Login_as = models.CharField(max_length=200 ,choices=Login)
-
-
-
