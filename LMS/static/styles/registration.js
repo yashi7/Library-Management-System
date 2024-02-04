@@ -23,20 +23,20 @@ function validateForm(event) {
   // If all validations pass, you can proceed with form submission or other actions
   errorMessage.textContent = 'Registration successful!';
   errorMessage.style.color = "green";
-
-  // Add slide animation
-  formContainer.classList.add('slide-out');
-
-  // Additional animation (fadeInOut)
-  errorMessage.style.animation = 'fadeInOut 1s ease';
-
-  // Here you might add code to submit the form data to a server, etc.
 }
+//   // Add slide animation
+//   formContainer.classList.add('slide-out');
 
-// Add an event listener for form submission
-document.getElementById('registrationForm').addEventListener('submit', validateForm);
+//   // Additional animation (fadeInOut)
+//   errorMessage.style.animation = 'fadeInOut 1s ease';
 
-// Add click event listener to trigger slide-out animation on container click
-document.getElementById('registrationContainer').addEventListener('click', function() {
-  this.classList.toggle('slide-out');
-});
+//   // Here you might add code to submit the form data to a server, etc.
+// }
+
+// // Add an event listener for form submission
+// document.getElementById('registrationForm').addEventListener('submit', validateForm);
+
+// // Add click event listener to trigger slide-out animation on container click
+// document.getElementById('registrationContainer').addEventListener('click', function() {
+//   this.classList.toggle('slide-out');
+// })
