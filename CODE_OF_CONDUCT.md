@@ -1,35 +1,32 @@
-# CODE OF CONDUCT
+# Code of Conduct
 
-## OUR PLEDGE:
+## Our Pledge
 
-In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+In the spirit of cultivating an open and inclusive environment, we, as contributors and maintainers, commit to ensuring that participation in our project and community is a harassment-free experience for everyone. We embrace diversity and do not tolerate discrimination based on age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-## OUR STANDARDS:
+## Our Standards
 
-Examples of behavior that contributes to creating a positive environment include:
+Positive behavior that contributes to a harmonious environment includes:
 
-- Being respectful and inclusive of diverse viewpoints and experiences.
+- Respecting and embracing diverse viewpoints and experiences.
 - Gracefully accepting constructive criticism.
-- Focusing on what is best for the community.
-- Showing empathy towards other community members.
+- Prioritizing the well-being of the community.
+- Demonstrating empathy towards fellow community members.
 
-Examples of unacceptable behavior include:
+Unacceptable behavior includes:
 
-- The use of sexualized language or imagery and unwelcoming attention or advances.
-- Trolling, insulting/derogatory comments, and personal or political attacks.
+- Use of sexualized language or imagery, and unwelcome attention or advances.
+- Trolling, making insulting/derogatory comments, and engaging in personal or political attacks.
 - Public or private harassment.
 - Publishing others' private information, such as physical or electronic addresses, without explicit permission.
-- Other conduct that could reasonably be considered inappropriate in a professional setting.
+- Any conduct that could reasonably be considered inappropriate in a professional setting.
 
-## OUR RESPONSIBILITIES:
+## Our Responsibilities
 
-Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+Project maintainers are tasked with clarifying acceptable behavior standards and are expected to take fair and appropriate corrective action in response to instances of unacceptable behavior. They have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that do not align with this Code of Conduct. Temporary or permanent banning of contributors may occur for behaviors deemed inappropriate, threatening, offensive, or harmful.
 
-Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned with this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+## Enforcement
 
-## ENFORCEMENT:
+Report instances of abusive, harassing, or otherwise unacceptable behavior by contacting [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in). All complaints will be reviewed and investigated, resulting in a response deemed necessary and appropriate. The project team is committed to maintaining confidentiality regarding the reporter of an incident. Specific enforcement policies may be posted separately for further details.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting at . All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
-
+Project maintainers not following or enforcing the Code of Conduct in good faith may face temporary or permanent repercussions, as determined by other members of the project's leadership.
