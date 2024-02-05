@@ -2,7 +2,7 @@
 
 Welcome to the Christ University Library Management System. This system has been meticulously designed to streamline the management and organization of the extensive book collection at Christ University Library, Pune, Lavasa campus.
 
-## Key Features
+## Key Features:
 - **User-Friendly Interface:** Our system boasts an intuitive and user-friendly interface, ensuring a seamless experience for both administrators and library patrons.
 
 - **Extensive Book Catalog:** Access a comprehensive catalog of books, making it easy to discover and explore a diverse range of literature and educational resources.
@@ -15,7 +15,7 @@ Welcome to the Christ University Library Management System. This system has been
 
 - **Advanced Security Measures:** Benefit from high-end security services, safeguarding user data, transaction information, and ensuring the integrity of the library system.
 
-## Getting Started
+## Getting Started:
 1. Clone the repository.
 2. 
 3.
@@ -23,11 +23,11 @@ Welcome to the Christ University Library Management System. This system has been
 5.
 6.
 
-## Further Works & Contributions
+## Further Works & Contributions:
 
 Thank you for your interest in contributing to the Christ University Library Management System. Your contributions are valuable to enhancing the system's functionality and user experience. Before you start contributing, please familiarize yourself with our guidelines outlined in our [Contribution Guidelines](CONTRIBUTING.md).
 
-### Opportunities for Further Works
+### Opportunities for Further Works:
 
 #### 1. **Enhancement of User Interface**
    - Explore opportunities to improve the user interface for an even more seamless and visually appealing experience.
@@ -48,7 +48,7 @@ Thank you for your interest in contributing to the Christ University Library Man
    - Explore the possibility of making the system accessible in multiple languages to cater to a broader audience.
    - Implement localization features to adapt content based on the user's language preferences.
 
-### How to Contribute
+### How to Contribute:
 
 1. **Fork the Repository:**
    - Fork the repository to your GitHub account.
@@ -71,11 +71,11 @@ Thank you for your interest in contributing to the Christ University Library Man
 7. **Submit a Pull Request:**
    - Create a pull request, detailing the changes you've made and their purpose.
 
-### Code of Conduct
+## Code of Conduct:
 
 Please note that we adhere to a [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive and inclusive community. All contributors are expected to follow these guidelines.
 
-### Contact Us
+## Contact Us:
 
 If you have any questions or need assistance, feel free to reach out to us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in).
 
