@@ -2,17 +2,17 @@
 
 Welcome to the Christ University Library Management System, meticulously crafted to optimize the management and organization of the extensive book collection at Christ University Library, Pune, Lavasa campus.
 
+## PROJECT OVERVIEW
+The Christ University Library Management System represents a meticulously crafted solution for the streamlined administration and organization of the expansive book collection at Christ University Library, situated in Pune, Lavasa campus. This comprehensive platform is designed to elevate the user experience for both administrators and library patrons through its intuitive and user-friendly interface. The system boasts key features, including a vast and diverse book catalog, real-time book availability checks, and advanced security measures to safeguard user data and transactions.
+
+Moreover, patrons can actively engage with the system by placing holds on desired books and managing personalized reading lists, thereby enhancing their overall interaction with the library resources. The incorporation of a robust penalty management system ensures transparent and fair assessments for overdue book returns. The project's emphasis on accessibility is further exemplified through the exploration of internationalization and localization features, making it adaptable to diverse linguistic preferences. As contributors embark on further enhancements, the project prioritizes areas such as user interface refinement, performance optimization, and the integration of innovative features, fostering a collaborative environment for continual improvement. In summary, the Christ University Library Management System stands as a sophisticated solution, harmonizing technology and literature for an enriched library experience.
+
 ## KEY FEATURES
 - 💻 **User-Friendly Interface:** Experience an intuitive and user-friendly interface designed for seamless interaction, catering to both administrators and library patrons.
-
 - 📚 **Extensive Book Catalog:** Explore a comprehensive catalog of books, facilitating the discovery and exploration of a diverse range of literature and educational resources.
-
 - 🔄 **Real-Time Book Availability:** Check the real-time availability status of books, simplifying efficient book borrowing and returns.
-
 - 📌 **Hold Placement and Reading List Management:** Empower patrons to place holds on desired books and manage reading lists, enhancing the overall user experience.
-
 - ⏰ **Penalty Management System:** Benefit from a robust penalty management system, ensuring fair and transparent penalty assessment for overdue book returns.
-
 - 🔐 **Advanced Security Measures:** Access high-end security services, safeguarding user data, transaction information, and ensuring the integrity of the library system.
 
 ---
@@ -114,8 +114,10 @@ We deeply appreciate your commitment to enhancing the Christ University Library 
 
 | Name                | Class                       | Role                      | Contact                                                                                       |
 | ------------------- | --------------------------- | ------------------------- | --------------------------------------------------------------------------------------------- |
-| Anurag Yadav        | 2MscDSB                     | Chief Library Officer     | [anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in)         |
-| Siddhartha Sinha    | 2MscDSB                     | Assistant Librarian       | [siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) |
-| Yashi               | 2MscDSB                     | Assistant Librarian       | [yashi.s@msds.christuniversity.in](mailto:team.member3@msds.christuniversity.in)              |
+| Anurag Yadav        | 2MscDSB                     | Chief Library Officer     | [✉️ anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in)         |
+| Siddhartha Sinha    | 2MscDSB                     | Assistant Librarian       | [✉️ siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) |
+| Yashi               | 2MscDSB                     | Assistant Librarian       | [✉️ yashi.s@msds.christuniversity.in](mailto:team.member3@msds.christuniversity.in)              |
 
 ---
+
+This is our complete readme.md
