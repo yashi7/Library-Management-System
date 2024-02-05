@@ -14,5 +14,5 @@ Thank you for your interest in contributing to our project!
 
 ...
 
-If you have any questions or need assistance, feel free to contact us at [anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in), [siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in), [yashi.s@msds.christuniversity.in](yashi.s@msds.christuniversity.in)
+If you have any questions or need assistance, feel free to contact us at [anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in).
 
