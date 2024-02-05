@@ -15,7 +15,10 @@ Welcome to the Christ University Library Management System, meticulously crafted
 
 - 🔐 **Advanced Security Measures:** Access high-end security services, safeguarding user data, transaction information, and ensuring the integrity of the library system.
 
-## GETTING STARTED:
+---
+
+## GETTING STARTED
+
 1. 🌐 **Clone the Repository:**
    - Obtain a local copy of the repository.
 
@@ -31,7 +34,9 @@ Welcome to the Christ University Library Management System, meticulously crafted
 5. 🎉 **Contribute and Enjoy:**
    - Dive into contributing to the project and enjoy the collaborative experience!
 
-## FURTHER WORKS & CONTRIBUTIONS:
+---
+
+## FURTHER WORKS & CONTRIBUTIONS
 
 Thank you for expressing your interest in contributing to the enhancement of the Christ University Library Management System. Your contributions play a vital role in improving the system's functionality and overall user experience. Before initiating your contributions, please familiarize yourself with our guidelines outlined in our [Contribution Guidelines](CONTRIBUTING.md).
 
@@ -79,22 +84,28 @@ Thank you for expressing your interest in contributing to the enhancement of the
 7. 🎯 **Submit a Pull Request:**
    - Create a pull request, detailing the changes you've made and their purpose.
 
-## CODE OF CONDUCT:
+---
+
+## CODE OF CONDUCT
 
 We strictly adhere to a [Code of Conduct](CODE_OF_CONDUCT.md) to foster a positive and inclusive community. We expect all contributors to adhere to these guidelines.
 
-## CONTACT US:
+---
+
+## CONTACT US
 
 Should you have any inquiries or require assistance, please feel free to contact us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in).
 
 We deeply appreciate your commitment to enhancing the Christ University Library Management System and eagerly anticipate your valuable contributions!
 
-## OUR LIBRARY:
-![Image1](https://github.com/yashi7/Library-Management-System/assets/140734907/0b4d574c-636d-4daf-9b9e-9bb8c9ef9570)
-![Image2](https://github.com/yashi7/Library-Management-System/assets/140734907/cd23e267-26d5-4e8e-bd3d-368790aa3a5d)
-![Image3](https://github.com/yashi7/Library-Management-System/assets/140734907/990d2dcb-b46b-4ee8-a009-e504f2a6d96b)
-![Image4](https://github.com/yashi7/Library-Management-System/assets/140734907/00985bdd-5149-429c-951d-b9632b471b83)
-![Image5](https://github.com/yashi7/Library-Management-System/assets/140734907/5684d553-9b9d-4901-8c93-49b562733dd8)
+---
 
+## OUR LIBRARY
+
+- ![Library Snapshot 1](https://github.com/yashi7/Library-Management-System/assets/140734907/0b4d574c-636d-4daf-9b9e-9bb8c9ef9570)
+- ![Library Snapshot 2](https://github.com/yashi7/Library-Management-System/assets/140734907/cd23e267-26d5-4e8e-bd3d-368790aa3a5d)
+- ![Library Snapshot 3](https://github.com/yashi7/Library-Management-System/assets/140734907/990d2dcb-b46b-4ee8-a009-e504f2a6d96b)
+- ![Library Snapshot 4](https://github.com/yashi7/Library-Management-System/assets/140734907/00985bdd-5149-429c-951d-b9632b471b83)
+- ![Library Snapshot 5](https://github.com/yashi7/Library-Management-System/assets/140734907/5684d553-9b9d-4901-8c93-49b562733dd8)
 
 ---
