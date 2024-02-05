@@ -77,7 +77,7 @@ Please note that we adhere to a [Code of Conduct](CODE_OF_CONDUCT.md) to ensure 
 
 ### Contact Us
 
-If you have any questions or need assistance, feel free to reach out to us at [library-support@example.com](mailto:library-support@example.com).
+If you have any questions or need assistance, feel free to reach out to us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in).
 
 We appreciate your dedication to improving the Christ University Library Management System and look forward to your contributions!
 
