@@ -91,6 +91,4 @@ We deeply appreciate your commitment to enhancing the Christ University Library 
 
 ![Library Snapshot](url_to_library_image.png)
 
-![Team Collaboration](url_to_collaboration_image.png)
-
 ---
