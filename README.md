@@ -9,7 +9,7 @@ Welcome to the Christ University Library Management System. This system has been
 
 - **Real-Time Book Availability:** Check the real-time availability status of books, facilitating efficient book borrowing and returns.
 
-- **Hold Placement and Reading List Management:** Patrons can place holds on desired books and manage personalized reading lists, enhancing the overall user experience.
+- **Hold Placement and Reading List Management:** Patrons can place holds on desired books and manage reading lists, enhancing the overall user experience.
 
 - **Penalty Management System:** A robust penalty management system is in place to handle overdue book returns, ensuring fair and transparent penalty assessment.
 
