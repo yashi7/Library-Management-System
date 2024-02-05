@@ -114,12 +114,13 @@ We deeply appreciate your commitment to enhancing the Christ University Library 
 
 ## ABOUT OUR TEAM
 
-| Name                | Class                       | Role                      | Contact                                                                                       |
-| ------------------- | --------------------------- | ------------------------- | --------------------------------------------------------------------------------------------- |
-| Anurag Yadav        | 2MscDSB                     | Chief Library Officer     | [✉️ anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in)         |
-| Siddhartha Sinha    | 2MscDSB                     | Assistant Librarian       | [✉️ siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) |
-| Yashi               | 2MscDSB                     | Assistant Librarian       | [✉️ yashi.s@msds.christuniversity.in](mailto:team.member3@msds.christuniversity.in)              |
+| Name                | Class                       | Role                      | Contact                                                                                          | GitHub Account                                  |
+| ------------------- | --------------------------- | ------------------------- | -------------------------------------------------------------------------------------------------| ----------------------------------------------------|
+| Anurag Yadav        | 2MscDSB                     | Chief Library Officer     | [✉️ anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in)         | [Anurag's GitHub](https://github.com/anurag871) |
+| Siddhartha Sinha    | 2MscDSB                     | Assistant Librarian       | [✉️ siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) | [Siddhartha's GitHub](https://github.com/BichutiPata19) |
+| Yashi               | 2MscDSB                     | Assistant Librarian       | [✉️ yashi.s@msds.christuniversity.in](mailto:team.member3@msds.christuniversity.in)              | [Yashi's GitHub](https://github.com/yashi7)            |
 
 ---
+
 
 # This is our complete README.md ⭐
