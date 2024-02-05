@@ -89,6 +89,7 @@ Should you have any inquiries or require assistance, please feel free to contact
 
 We deeply appreciate your commitment to enhancing the Christ University Library Management System and eagerly anticipate your valuable contributions!
 
-![Carousel4](https://github.com/yashi7/Library-Management-System/assets/140734907/13e98973-584d-464f-844d-d9ac87cbe5f3)
+## OUR LIBRARY:
+![LibraryImage](https://github.com/yashi7/Library-Management-System/assets/140734907/13e98973-584d-464f-844d-d9ac87cbe5f3)
 
 ---
