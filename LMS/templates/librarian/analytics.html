@@ -24,34 +24,36 @@ data-toggle="collapse" data-target="#navbar">
         <div class="row">
           
             <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
-                <a href="#" class="navbar-brand text-white d-blockmx-auto text-center py-3 mb-4">
-                  <img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
+                <a href="#" class="navbar-brand text-white d-block
+                mx-auto text-center py-3 mb-4"><img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
                 <div class="bottom-border pb-3">
                     
-                    <p class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;" >{{request.user.username}}-{{user.Register_number}}</p>
+                    <a href="#" class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">{{request.user.username}}-{{lib_details.Register_number}}</a>
                 </div>
                 <ul class="navbar-nav flex-column mt-4">
-                    <li class="nav-item"><a href="{% url 'user_index' %}" class="nav-link text-white p-3 mb-2
-                        sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>
-                 Dashboard</a></li>
-                 <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
-                     sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
-                 Profile</a></li>
-                
-                 <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
-                     sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
-                 Books</a></li>
-                 <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
-                     current"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
-                 Analytics</a></li>
+                   <li class="nav-item"><a href="{% url 'lib' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>
+                Dashboard</a></li>
+                <li class="nav-item"><a href="{% url 'libprofile' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
+                Profile</a></li>
+                <li class="nav-item"><a href="{% url 'libbooks' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
+                Books</a></li>
+                <li class="nav-item"><a href="{% url 'analytics' %}" class="nav-link text-white p-3 mb-2
+                    current"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
+                Analytics</a></li>
+                <li class="nav-item"><a href="{% url 'books' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>
+                Add Books</a></li>
                
-                 <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
+                <li class="nav-item"><a href="{% url 'tables' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
-                 Tables</a></li>
-                 <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
-                     sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
-                 Log-out</a></li>
-                 
+                Tables</a></li>
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
+                    Log-Out</a></li>
+                
 
             </div>
            

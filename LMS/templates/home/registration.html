@@ -1,0 +1,61 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRIST UNIVERSITY LIBRARY</title>
+    <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
+    <link rel="stylesheet" href="{% static 'styles/registration.css' %}">
+</head>
+
+<body style="background-image: url('/static/Images/image1.jpg'); font-family: 'Times New Roman', Times, serif;">
+    <div class="container">
+        <h2>NEW REGISTRATION</h2>
+        <form id="registrationForm" method="post">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="Name"><b>User Name:</b></label>
+                <input type="text" id="UserName" name="UserName" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="User_ID"><b>User ID:</b></label>
+                <input type="text" id="User_ID" name="User_ID" required>
+            </div> -->
+            <div class="form-group">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="regno"><b>Register Number</b></label>
+                <input type="text" id="regno" name="regno" required>
+            </div>
+            <div class="form-group">
+                <label for="role" id="login_as" name="login_as"><b>Login As</b></label>
+                <select class="form-group" id="role" name="role" required focus style="width: 100%; padding: 2%; background-color: rgba(240, 248, 255, 0.521); color: black;  font-family: 'Times New Roman', Times, serif;">
+                    <option value="User" selected>User</option>
+                    <option value="Librarian" selected>Librarian</option>
+                    <option value="Select Role" disabled selected></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword"><b>Confirm Password:</b></label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit" ><b>REGISTER</b></button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="{% static 'styles/registration.js' %}"></script>
+</body>
+
+</html>

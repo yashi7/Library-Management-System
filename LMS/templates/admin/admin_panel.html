@@ -1,0 +1,60 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>LIBRARIAN</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/c0fc838bea.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles\user.css' %}">
+</head>
+
+<body style="background-image: url('/static/Images/image1.jpg'); font-family: 'Times New Roman', Times, serif;">
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                        <a href="#" class="navbar-brand text-white d-block
+                        mx-auto text-center py-3 mb-4"><img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
+                        <div class="bottom-border pb-3">
+                            
+                            <a href="#" class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">{{request.user.username}}</a>
+                        </div>
+                        <ul class="navbar-nav flex-column mt-4">
+                           <li class="nav-item"><a href="{% url 'adminpanel' %}" class="nav-link text-white p-3 mb-2
+                            current"><i class="fas fa-home text-light fa-lg mr-3"></i>
+                        Dashboard</a></li>
+                        
+                        <li class="nav-item"><a href="{% url 'adminbooks' %}" class="nav-link text-white p-3 mb-2
+                            sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
+                        Books</a></li>
+                        
+                        <li class="nav-item"><a href="{% url 'admintables' %}" class="nav-link text-white p-3 mb-2
+                            sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
+                        Tables</a></li>
+                        <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
+                            sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
+                            Log-Out</a></li>
+                        
+        
+                    </div>
+
+                    
+                </div>
+
+<span style="font-size: 100%; font-family: 'Times New Roman', Times, serif;">WELCOME</span>
+</body>
+
+</html>

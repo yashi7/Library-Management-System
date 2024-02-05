@@ -1,0 +1,135 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/c0fc838bea.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'styles\user.css' %}">
+</head>
+  <body style="background-image: url('/static/Images/image1.jpg'); font-family: 'Times New Roman', Times, serif;">
+     
+      <nav class="navbar navbar-expand-md navbar-light">
+<button class="navbar-toggler ml-auto mb-2 bg-light" type="button" 
+data-toggle="collapse" data-target="#navbar">
+<span class="navbar-toggler-icon"></span>
+
+</button>
+<div class="collapse navbar-collapse" id="navbar">
+    <div class="container-fluid">
+        <div class="row">
+          
+            <div class=" col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+                <a href="#" class="navbar-brand text-white d-block
+                mx-auto text-center py-3 mb-4"><img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
+                <div class="bottom-border pb-3">
+                    
+                    <a href="#" class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">{{request.user.username}}-{{lib_details.Register_number}}</a>
+                </div>
+                <ul class="navbar-nav flex-column mt-4">
+                   <li class="nav-item"><a href="{% url 'adminpanel' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-home text-light fa-lg mr-3"></i>
+                Dashboard</a></li>
+                
+                <li class="nav-item"><a href="{% url 'adminbooks' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
+                Books</a></li>
+               
+                <li class="nav-item"><a href="{% url 'admintables' %}" class="nav-link text-white p-3 mb-2
+                    current"><i class="fas fa-table text-light fa-lg mr-3"></i>
+                Tables</a></li>
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
+                    sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
+                    Log-Out</a></li>
+                
+
+            </div>
+           
+<div class="col-xl-10 col-lg-9 col-md-8 ml-auto top-bar  py-2 top-nav">
+    <div class="row align-item-center">
+   <div class="col-md-4">
+ 
+   </div>
+   <div class="col-md-5">
+    <h1 style="color: white;text-decoration: underline;">TABLES</h1>
+   </div>
+  
+        </div>
+</div>
+            
+        </div>
+    </div>
+</div>
+      </nav>
+      
+      
+      
+   
+
+   
+<section>
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                <div class="row align-items-center">
+                     <div class="col-xl-6 col-12 mb-4 mb-xl-0">
+                       <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif; margin-top: 10%;">
+                           USERS
+                       </h3> 
+                       <table class="table table-striped bg-light text-center">
+                           <thead>
+                               <tr class="text-dark">
+                                   
+                                   <th>Name</th>
+                                   <th>Register Number</th>
+                                   <th>Email</th>
+                                   <th>User Type</th>
+
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                {% for i in us_st %}
+                                   <th>{{i.Username}}</th>
+                                   <td>{{i.Register_number}}</td>
+                                   <td>{{i.Email}}</td>
+                                   <td>{{i.Login_as}}</td>
+                               </tr>
+                                {% endfor %}
+                                       
+                           </tbody>
+                       </table>
+                       
+                    
+
+
+
+
+                       
+                      </div>
+                <div class="col-xl-6 col-12">
+       
+        
+
+                        
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+     
+     
+      
+      
+
+    
+      
+    
+  </body>
+</html>

@@ -16,11 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-<<<<<<< Updated upstream
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback,seemore,members
-=======
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback,seemore
->>>>>>> Stashed changes
+from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables
 
 
 urlpatterns = [
@@ -34,16 +30,21 @@ urlpatterns = [
     # path('user/',user,name='user'),
     path('user_index/',user_index,name='user_index'),
     path('profile/',profile,name='profile'),
-    path('books/',books,name='books'),
+    path('books/',books_page,name='books'),
     path('tables/',tables,name='tables'),
     path('analytics/',analytics,name='analytics'),
     path('lib/',lib,name='lib'),
     path('rules/',rules,name='r'),
     path('feedback/',feedback,name='feedback'),
+    path('userbooks/',userBooks,name='userbooks'),
+    path('libbooks/',libBook,name='libbooks'),
+    path('delete/<str:id>',deletebook,name='delete'),
+    path('libprofile/',libprofile,name='libprofile'),
     path('seemore/',seemore,name='seemore'),
-<<<<<<< Updated upstream
     path('members/',members,name='members'),
-=======
->>>>>>> Stashed changes
+    path('adminpanel/',adminpanel,name='adminpanel'),
+    path('adminbooks/',adminBooks,name='adminbooks'),
+    path('admintables/',admintables,name='admintables'),
+    
 ]
 
