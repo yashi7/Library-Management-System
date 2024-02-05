@@ -1,9 +1,5 @@
 # CHRIST UNIVERSITY LIBRARY MANAGEMENT SYSTEM
 
-# Class: 
-2 MSc DS B
+Class: 2MScDSB
 
-# Members: 
-Anurag Yadav (23122108)
-Siddhartha Sinha (23122133)
-Yashi (23122144)
+Members: Anurag Yadav (23122108), Siddhartha Sinha (23122133), Yashi (23122144)
