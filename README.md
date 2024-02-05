@@ -94,7 +94,7 @@ We strictly adhere to a [Code of Conduct](CODE_OF_CONDUCT.md) to foster a positi
 
 ## CONTACT US
 
-Should you have any inquiries or require assistance, please feel free to contact us at [siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) .
+Should you have any inquiries or require assistance, please feel free to contact us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in).
 
 We deeply appreciate your commitment to enhancing the Christ University Library Management System and eagerly anticipate your valuable contributions!
 
@@ -102,10 +102,10 @@ We deeply appreciate your commitment to enhancing the Christ University Library 
 
 ## OUR LIBRARY
 
-![Library Snapshot 1](https://github.com/yashi7/Library-Management-System/assets/140734907/0b4d574c-636d-4daf-9b9e-9bb8c9ef9570)
-![Library Snapshot 2](https://github.com/yashi7/Library-Management-System/assets/140734907/cd23e267-26d5-4e8e-bd3d-368790aa3a5d)
-![Library Snapshot 3](https://github.com/yashi7/Library-Management-System/assets/140734907/990d2dcb-b46b-4ee8-a009-e504f2a6d96b)
-![Library Snapshot 4](https://github.com/yashi7/Library-Management-System/assets/140734907/00985bdd-5149-429c-951d-b9632b471b83)
-![Library Snapshot 5](https://github.com/yashi7/Library-Management-System/assets/140734907/5684d553-9b9d-4901-8c93-49b562733dd8)
+- ![Library Snapshot 1](https://github.com/yashi7/Library-Management-System/assets/140734907/0b4d574c-636d-4daf-9b9e-9bb8c9ef9570)
+- ![Library Snapshot 2](https://github.com/yashi7/Library-Management-System/assets/140734907/cd23e267-26d5-4e8e-bd3d-368790aa3a5d)
+- ![Library Snapshot 3](https://github.com/yashi7/Library-Management-System/assets/140734907/990d2dcb-b46b-4ee8-a009-e504f2a6d96b)
+- ![Library Snapshot 4](https://github.com/yashi7/Library-Management-System/assets/140734907/00985bdd-5149-429c-951d-b9632b471b83)
+- ![Library Snapshot 5](https://github.com/yashi7/Library-Management-System/assets/140734907/5684d553-9b9d-4901-8c93-49b562733dd8)
 
 ---
