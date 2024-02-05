@@ -1,4 +1,4 @@
-# !(https://example.com/christ_university_logo.png) Christ University Library ![Book Logo](https://example.com/book_logo.png)
+# (https://example.com/christ_university_logo.png) Christ University Library ![Book Logo](https://example.com/book_logo.png)
 
 Welcome to the Christ University Library Management System. This system is designed to efficiently manage and organize the vast collection of books in the Christ University Library.
 
