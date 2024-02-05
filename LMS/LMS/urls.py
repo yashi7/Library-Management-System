@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables
+from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables,logout
 
 
 urlpatterns = [
@@ -45,6 +45,6 @@ urlpatterns = [
     path('adminpanel/',adminpanel,name='adminpanel'),
     path('adminbooks/',adminBooks,name='adminbooks'),
     path('admintables/',admintables,name='admintables'),
-    
+    path('logout/',logout,name='logout'),
 ]
 

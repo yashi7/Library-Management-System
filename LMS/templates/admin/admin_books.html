@@ -87,7 +87,7 @@
                         mx-auto text-center py-3 mb-4"><img src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
                         <div class="bottom-border pb-3">
                             
-                            <a href="#" class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">{{request.user.username}}-{{lib_details.Register_number}}</a>
+                            <a href="#" class="text-white " style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">ADMIN</a>
                         </div>
                         <ul class="navbar-nav flex-column mt-4">
                            <li class="nav-item"><a href="{% url 'adminpanel' %}" class="nav-link text-white p-3 mb-2
@@ -128,8 +128,8 @@
     <section>
         <div class="container-fluid">
             <div class="row mb-5">
-                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-                    <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-9 col-md-8 ml-auto">
+                    <div class="row align-items-center" style="margin-left: 20%;">
                         <div class="col-xl-6 col-12 mb-4 mb-xl-0">
                             <h1><b style="color: burlywood; margin-left: 12%;">RECORD OF BOOKS</b></h1>
 
@@ -142,7 +142,7 @@
                                             <th>BOOK ID</th>
                                             <th>AUTHOR</th>
                                             <th>BOOK STATUS</th>
-                                            <th> </th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>

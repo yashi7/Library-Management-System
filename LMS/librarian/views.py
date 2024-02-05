@@ -4,6 +4,8 @@ from django.contrib.auth import authenticate,login
 import datetime
 from .models import user_new,books,user_with_books
 from django.utils.dateparse import parse_date
+from django.middleware.csrf import rotate_token
+from django.http import HttpResponse
 result=[]
 book=[]
 def index(request):
@@ -16,14 +18,15 @@ def loginpage(request):
         user=authenticate(request,username=username,password=pass1)
         
         if user is not None:
+            if user.is_superuser:
+                return redirect('adminpanel')
             result=user_new.objects.filter(Username=user)
             data1=result[0].Login_as
             print(result[0])
             print('username:',result[0].Username)
             print(data1)
-            if user.is_superuser:
-                return adminpanel(request)  
-            elif data1=='User':
+              
+            if data1=='User':
                 print('logged in as user')
                 result=user_new.objects.filter(Username=username)
                 data=result[0]
@@ -225,3 +228,7 @@ def admintables(request):
     us_stt=user_new.objects.all()
     book_det=user_with_books.objects.all()
     return render(request, 'admin/admin_tables.html',{'us_st':us_stt,'bdet':book_det})
+def logout(request):
+    rotate_token(request)
+
+    return redirect('login')
