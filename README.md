@@ -1,4 +1,4 @@
-# ![Christ University Logo]([https://example.com/christ_university_logo.png](https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fd%2Fdd%2FOfficial_Logo_of_CHRIST%2528Deemed_to_be_University%2529%252C_bangalore.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FChrist_University&docid=PqGdq64WQgBOHM&tbnid=HWaAuksPTHGboM&vet=12ahUKEwjjz-Kqx5OEAxW8RmcHHSIkCjMQM3oECHYQAA..i&w=315&h=316&ved=2ahUKEwjjz-Kqx5OEAxW8RmcHHSIkCjMQM3oECHYQAA)) Christ University Library ![Book Logo](https://example.com/book_logo.png)
+# Christ University Library
 
 Welcome to the Christ University Library Management System. This system is designed to efficiently manage and organize the vast collection of books in the Christ University Library.
 
@@ -17,4 +17,3 @@ We welcome contributions! Please read our [Contribution Guidelines](CONTRIBUTING
 
 ---
 
-![Book Logo](https://example.com/book_logo.png)
