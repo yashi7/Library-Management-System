@@ -1,4 +1,4 @@
-# Christ University Library
+# Christ University Library Management System
 
 Welcome to the Christ University Library Management System. This system is designed to efficiently manage and organize the vast collection of books in the Christ University Library.
 
