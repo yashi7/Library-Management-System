@@ -112,10 +112,10 @@ We deeply appreciate your commitment to enhancing the Christ University Library 
 
 ## ABOUT OUR TEAM
 
-| Name                  | Class                           | Role                      | Contact                                                                                       |
-| --------------------- | ------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------- |
-| [Anurag Yadav]        | [2MscDSB]                       | Chief Library Officer     | [anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in)         |
-| [Siddhartha Sinha]    | [2MscDSB]                       | Assistant Librarian       | [siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) |
-| [Team Member 3]       | [2MscDSB]                       | Assistant Librarian       | [team.member3@msds.christuniversity.in](mailto:team.member3@msds.christuniversity.in)         |
+| Name                | Class                       | Role                      | Contact                                                                                       |
+| ------------------- | --------------------------- | ------------------------- | --------------------------------------------------------------------------------------------- |
+| Anurag Yadav        | 2MscDSB                     | Chief Library Officer     | [anurag.yadav@msds.christuniversity.in](mailto:anurag.yadav@msds.christuniversity.in)         |
+| Siddhartha Sinha    | 2MscDSB                     | Assistant Librarian       | [siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in) |
+| Yashi               | 2MscDSB                     | Assistant Librarian       | [yashi.s@msds.christuniversity.in](mailto:team.member3@msds.christuniversity.in)              |
 
 ---
