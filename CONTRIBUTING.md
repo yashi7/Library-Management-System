@@ -14,5 +14,5 @@ Thank you for your interest in contributing to our project!
 
 ...
 
-If you have any questions or need assistance, feel free to contact us at [email@example.com](mailto:siddharthasinha19@gmail.com).
+If you have any questions or need assistance, feel free to contact us at [siddharthasinha19@gmail.com](mailto:siddharthasinha19@gmail.com).
 
