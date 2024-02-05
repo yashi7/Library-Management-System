@@ -7,6 +7,8 @@ The Christ University Library Management System represents a meticulously crafte
 
 Moreover, patrons can actively engage with the system by placing holds on desired books and managing personalized reading lists, thereby enhancing their overall interaction with the library resources. The incorporation of a robust penalty management system ensures transparent and fair assessments for overdue book returns. The project's emphasis on accessibility is further exemplified through the exploration of internationalization and localization features, making it adaptable to diverse linguistic preferences. As contributors embark on further enhancements, the project prioritizes areas such as user interface refinement, performance optimization, and the integration of innovative features, fostering a collaborative environment for continual improvement. In summary, the Christ University Library Management System stands as a sophisticated solution, harmonizing technology and literature for an enriched library experience.
 
+---
+
 ## KEY FEATURES
 - 💻 **User-Friendly Interface:** Experience an intuitive and user-friendly interface designed for seamless interaction, catering to both administrators and library patrons.
 - 📚 **Extensive Book Catalog:** Explore a comprehensive catalog of books, facilitating the discovery and exploration of a diverse range of literature and educational resources.
