@@ -94,7 +94,7 @@ We strictly adhere to a [Code of Conduct](CODE_OF_CONDUCT.md) to foster a positi
 
 ## CONTACT US
 
-Should you have any inquiries or require assistance, please feel free to contact us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in).
+Should you have any inquiries or require assistance, please feel free to contact us at [siddhartha.sinha@msds.christuniversity.in](mailto:siddhartha.sinha@msds.christuniversity.in).
 
 We deeply appreciate your commitment to enhancing the Christ University Library Management System and eagerly anticipate your valuable contributions!
 
