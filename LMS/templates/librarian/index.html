@@ -66,8 +66,20 @@
             cursor: pointer;
         }
     
+<<<<<<< Updated upstream
         a:hover {
             transform: scale(1.1); 
+=======
+        /* .a {
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            transition: 0.3s ease-in-out; /* Transition for text color */
+         
+    
+        a:hover {
+            transform: scale(1.1); 
+            /* text-decoration: none; */
+>>>>>>> Stashed changes
             text-decoration: underline;
             color: burlywood;
         }
@@ -116,14 +128,22 @@
             justify-content: space-around;
         }
     
+<<<<<<< Updated upstream
         footer h5 {
+=======
+        footer h2 {
+>>>>>>> Stashed changes
             margin: 0;
             cursor: pointer;
             user-select: none;
             transition: transform 0.3s ease-in-out;
         }
     
+<<<<<<< Updated upstream
         footer h5:hover {
+=======
+        footer h2:hover {
+>>>>>>> Stashed changes
             transform: scale(1.1);
         }
     
@@ -152,13 +172,18 @@
         }
     
         .book:hover {
+<<<<<<< Updated upstream
             transform: scale(1.2);
+=======
+            transform: scale(1.2); /* Scale effect on hover */
+>>>>>>> Stashed changes
         }
     
         .book.expanded {
             position: absolute;
             top: 0;
             left: 0;
+<<<<<<< Updated upstream
             width: 150px;
             height: 300px;
             z-index: 2;
@@ -167,6 +192,16 @@
     
         .book.expanded:hover {
             transform: scale(1.5);
+=======
+            width: 150px; /* Adjust the expanded size as needed */
+            height: 300px; /* Adjust the expanded size as needed */
+            z-index: 2;
+            transform: scale(1.5); /* Adjust the scale factor as needed */
+        }
+    
+        .book.expanded:hover {
+            transform: scale(1.5); /* Keep the scale factor consistent on hover */
+>>>>>>> Stashed changes
         }
     
         @keyframes bookAnimation {
@@ -187,7 +222,11 @@
         .animated-letter {
             display: inline-block;
             transform-origin: 50% 50%;
+<<<<<<< Updated upstream
             animation: bounceIn 0.5s ease infinite alternate;
+=======
+            animation: bounceIn 0.5s ease infinite alternate; /* Modified animation property */
+>>>>>>> Stashed changes
         }
 
         @keyframes bounceIn {
@@ -201,6 +240,7 @@
             }
         }
 
+<<<<<<< Updated upstream
         .see-more-link {
             color: white;
             font-size: 18px;
@@ -222,6 +262,8 @@
             transform: scale(1.2);
         }
         }
+=======
+>>>>>>> Stashed changes
     </style>
     
 </head>
@@ -308,9 +350,12 @@
       <span class="animated-letter">O</span>
       <span class="animated-letter">P</span>
       <span class="animated-letter">&nbsp;</span>
+<<<<<<< Updated upstream
       <span class="animated-letter">1</span>
       <span class="animated-letter">5</span>
       <span class="animated-letter">&nbsp;</span>
+=======
+>>>>>>> Stashed changes
       <span class="animated-letter">P</span>
       <span class="animated-letter">I</span>
       <span class="animated-letter">C</span>
@@ -320,17 +365,36 @@
   </div>
   <div class="books-section" style="margin-top: 5%;">
     <div class="book-container">
+<<<<<<< Updated upstream
+=======
+        <img src="{% static 'Images/book1.jpg' %}" alt="Book 1" class="book">
+    </div>
+    <div class="book-container">
+>>>>>>> Stashed changes
         <img src="{% static 'Images/book2.jpg' %}" alt="Book 2" class="book">
     </div>
     <div class="book-container">
         <img src="{% static 'Images/book3.jpg' %}" alt="Book 3" class="book">
     </div>
     <div class="book-container">
+<<<<<<< Updated upstream
+=======
+        <img src="{% static 'Images/book4.jpg' %}" alt="Book 4" class="book">
+    </div>
+    <div class="book-container">
+        <img src="{% static 'Images/book5.jpg' %}" alt="Book 5" class="book">
+    </div>
+    <div class="book-container">
+        <img src="{% static 'Images/book6.jpg' %}" alt="Book 6" class="book">
+    </div>
+    <div class="book-container">
+>>>>>>> Stashed changes
         <img src="{% static 'Images/book7.jpg' %}" alt="Book 7" class="book">
     </div>
     <div class="book-container">
         <img src="{% static 'Images/book8.jpg' %}" alt="Book 8" class="book">
     </div>
+<<<<<<< Updated upstream
     <div class="book-container">
         <img src="{% static 'Images/book12.jpg' %}" alt="Book 12" class="book">
     </div>
@@ -370,13 +434,48 @@
 
     <div style="text-align: center; margin-top: 20px; font-size: xx-large;">
         <a href="{% url 'seemore' %}" class="see-more-link"><b>SEE MORE</b></a>
+=======
+    </div>  
+    <div class="books-section"> 
+    <div class="book-container" >
+        <img src="{% static 'Images/book9.jpg' %}" alt="Book 9" class="book">
+    </div>
+    <div class="book-container" >
+        <img src="{% static 'Images/book10.jpg' %}" alt="Book 10" class="book">
+    </div>
+    <div class="book-container" >
+        <img src="{% static 'Images/book11.jpg' %}" alt="Book 11" class="book">
+    </div>
+    <div class="book-container" >
+        <img src="{% static 'Images/book12.jpg' %}" alt="Book 12" class="book">
+    </div>
+    <div class="book-container" >
+        <img src="{% static 'Images/book13.jpg' %}" alt="Book 13" class="book">
+    </div>
+    <div class="book-container" >
+        <img src="{% static 'Images/book14.jpg' %}" alt="Book 14" class="book">
+    </div>
+    <div class="book-container" >
+        <img src="{% static 'Images/book15.jpg' %}" alt="Book 15" class="book">
+    </div>
+    <!-- Add more books as needed -->
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="{% url 'seemore' %}" style="color: white; font-size: 18px;"><b>See More</b></a>
+>>>>>>> Stashed changes
     </div>
 
     <footer>
         <span>
+<<<<<<< Updated upstream
             <h5 id="rules"><a href="{% url 'r' %}"><b style="color: white;"><li>REGULATIONS</li></b></a></h5>
             <h5 id="feedback"><a href="{% url 'feedback' %}"><b style="color: white; text-align: left;"><li>FEEDBACKS</li></b></a></h5>
             <h5 id="members"><a href="{% url 'members' %}"><b style="color: white;"><li>OUR MEMBERS</li></b></a></h5>
+=======
+            <h5 id="feedback"><a href="{% url 'feedback' %}"><b style="color: white;"><li>FEEDBACKS</li></b></a></h5>
+            <h5 id="rules"><a href="{% url 'r' %}"><b style="color: white;"><li>RULES AND REGULATIONS</li></b></a></h5>
+>>>>>>> Stashed changes
         </span>    
         <div style="margin-top:2%;">
             <span style="text-align: center; color: white; position:relative; bottom: 0%;">

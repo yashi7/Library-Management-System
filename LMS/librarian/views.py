@@ -89,5 +89,8 @@ def feedback(request):
     return render(request, 'librarian/feedback.html')
 def seemore(request):
     return render(request, 'librarian/seemore.html')
+<<<<<<< Updated upstream
 def members(request):
     return render(request, 'librarian/members.html')
+=======
+>>>>>>> Stashed changes

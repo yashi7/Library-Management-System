@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< Updated upstream
 from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback,seemore,members
+=======
+from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books,lib,analytics,rules,feedback,seemore
+>>>>>>> Stashed changes
 
 
 urlpatterns = [
@@ -37,6 +41,9 @@ urlpatterns = [
     path('rules/',rules,name='r'),
     path('feedback/',feedback,name='feedback'),
     path('seemore/',seemore,name='seemore'),
+<<<<<<< Updated upstream
     path('members/',members,name='members'),
+=======
+>>>>>>> Stashed changes
 ]
 

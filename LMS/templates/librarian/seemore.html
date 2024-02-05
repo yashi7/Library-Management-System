@@ -3,16 +3,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+<<<<<<< Updated upstream
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHRIST UNIVERSITY LIBRARY</title>
   <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
   <style>
     body {
       font-family: 'Times New Roman', Times, serif;
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRIST UNIVERSITY LIBRARY</title>
+    <link rel="icon" href="{% static 'Images/Christ Logo.png' %}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+>>>>>>> Stashed changes
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
+<<<<<<< Updated upstream
       align-items: center;  
       flex-direction: column; 
       height: 100vh;
@@ -93,6 +103,85 @@
     margin-bottom: 5%;
     margin-top: 20%;
   }
+=======
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f4f4f4;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      animation: slideInUp 1s ease-in-out;
+      color: #333;
+      margin-left: 10%;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 80%;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+      animation: slideInLeft 1s ease-in-out;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    th {
+      background-color: lightblue;
+      color: black;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+
+    tr:hover {
+      background-color: lightcyan;
+      transform: scale(1.02);
+    }
+
+    .form {
+      width: 30%;
+      margin-left: 10%;
+      animation: slideInRight 1s ease-in-out;
+    }
+
+    label {
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    input {
+      padding: 8px;
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px;
+      background-color: lightblue;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #99c2ff;
+    }
+>>>>>>> Stashed changes
 
     @keyframes fadeIn {
       from {
@@ -125,6 +214,7 @@
       }
     }
 
+<<<<<<< Updated upstream
     @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -166,10 +256,36 @@
           <th>BOOK NAME</th>
           <th>AUTHOR NAME</th>
           <th>STATUS</th>
+=======
+    @keyframes slideInRight {
+      from {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>  
+  <h1><b>RECORD OF BOOKS</b></h1>
+
+  <div class="container">
+    <table>
+      <thead>  
+        <tr>
+          <th>BOOK TITLE</th>
+          <th>AUTHOR</th>
+          <th>STATUS</th>
+          <th>CURRENT COUNT</th>
+>>>>>>> Stashed changes
         </tr>
       </thead>
       <tbody>
         <tr>
+<<<<<<< Updated upstream
           <td><img class="book-image" src="{% static 'Images/book1.jpg' %}" alt="Book Image"></td>
           <td>001</td>
           <td>MILK AND HONEY</td>
@@ -518,11 +634,104 @@
           <td>THE CASTLE</td>
           <td>FRANZ KAFKA</td>
           <td>BORROWED</td>
+=======
+          <td>Book 1</td>
+          <td>Author 1</td>
+          <td>Returned</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Book 2</td>
+          <td>Author 1</td>
+          <td>Borrowed</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Book 3</td>
+          <td>Author 2</td>
+          <td>Returned</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Book 4</td>
+          <td>Author 2</td>
+          <td>Borrowed</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Book 5</td>
+          <td>Author 2</td>
+          <td>Returned</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Book 6</td>
+          <td>Author 2</td>
+          <td>Returned</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Book 7</td>
+          <td>Author 3</td>
+          <td>Borrowed</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Book 8</td>
+          <td>Author 3</td>
+          <td>Returned</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Book 9</td>
+          <td>Author 4</td>
+          <td>Borrowed</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Book 10</td>
+          <td>Author 5</td>
+          <td>Returned</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Book 11</td>
+          <td>Author 5</td>
+          <td>Returned</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Book 12</td>
+          <td>Author 6</td>
+          <td>Returned</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Book 13</td>
+          <td>Author 7</td>
+          <td>Borrowed</td>
+          <td>4</td>
+>>>>>>> Stashed changes
         </tr>
       </tbody>
     </table>
 
+<<<<<<< Updated upstream
     <p class="more-books">More books coming soon!</p>
+=======
+    <form class="form">
+      <label for="userName">User Name:</label>
+      <input type="text" id="userName" name="userName" placeholder="Enter user name">
+
+      <label for="bookId">Book ID:</label>
+      <input type="text" id="bookId" name="bookId" placeholder="Enter book ID">
+
+      <label for="bookName">Book Name:</label>
+      <input type="text" id="bookName" name="bookName" placeholder="Enter book name">
+
+      <button type="submit">Submit</button>
+    </form>
+>>>>>>> Stashed changes
   </div>
 
 </body>
