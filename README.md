@@ -9,8 +9,8 @@ Welcome to the Christ University Library Management System. This system is desig
 
 ## Getting Started
 1. Clone the repository.
-2. Install dependencies with `npm install`.
-3. Run the application with `npm start`.
+2. ......
+3. ......
 
 ## Contributing
 We welcome contributions! Please read our [Contribution Guidelines](CONTRIBUTING.md) for more information.
