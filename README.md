@@ -1,4 +1,4 @@
-# Christ University Library Management System
+# CHRIST UNIVERSITY LIBRARY MANAGEMENT SYSTEM
 
 Welcome to the Christ University Library Management System. This system has been meticulously designed to streamline the management and organization of the extensive book collection at Christ University Library, Pune, Lavasa campus.
 
