@@ -1,1 +1,18 @@
+# Contributing to Christ University Library
+
+Thank you for your interest in contributing to our project!
+
+## Prerequisites
+- Make sure you have Node.js installed.
+
+## Getting Started
+1. Fork the repository.
+2. Clone the forked repository.
+3. Install dependencies with `npm install`.
+4. Make your changes and test thoroughly.
+5. Submit a pull request.
+
+...
+
+If you have any questions or need assistance, feel free to contact us at [email@example.com](mailto:siddharthasinha19@gmail.com).
 
