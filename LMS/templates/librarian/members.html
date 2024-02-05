@@ -21,35 +21,55 @@
     }
 
     .container {
-      display: flex;
-      justify-content: center; 
-      align-items: center; 
-      flex-direction: column; 
-      width: 80%;
-      color: aliceblue;
-      margin-top: 20%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    color: aliceblue;
+  }
+
+  .header {
+    margin-top: 14%;
+    text-align: center;
+    margin-bottom: 1px; 
+    padding: 20px 0;
+    background: linear-gradient(burlywood 50%, beige);
+    border-radius: 10px 10px 0 0;
+    color: black;
+    animation: fadeInUp 1s ease-out;
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+    
+    h1{ color: white; margin-bottom: 20px; }
 
     table {
       border-collapse: collapse;
-      width: 60%;
+      width: 80%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-right: 20px;
-      margin-bottom: 30%;
+      margin-top: 5%;
+      margin-bottom: 15%;
       animation: slideInLeft 1s ease-in-out;
     }
 
     th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-      vertical-align: middle; 
-      transition: background-color 0.3s ease-in-out;
-    }
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s ease-in-out;
+  }
 
     th {
       background-color: burlywood;
       color: whitesmoke;
+      font-size: x-large;
     }
 
     tr:nth-child(even) {
@@ -109,7 +129,9 @@
 <body>  
 
   <div class="container">
-    <div class="heading">OUR MEMBERS</div>
+    <header class="header">
+      <h1 class="h1">OUR MEMBERS</h1>
+    </header>
     <table>
       <thead>  
         <tr>
@@ -117,49 +139,34 @@
           <th>NAME</th>
           <th>DESIGNATION</th>
           <th>CONTACTS</th>
-          <th>RESPONSIBILITY</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><img class="book-image" src="{% static 'Images/book1.jpg' %}" alt="Book Image"></td>
+          <td><img class="book-image" src="{% static 'Images/Anurag.jpg' %}" alt="Book Image"></td>
           <td>ANURAG YADAV</td>
           <td>CHIEF LIBRARY OFFICER</td>
           <td>
             <li>Phone: 7055070679</li>
             <li>Email: anurag.yadav@msds.christuniversity.in</li>
           </td>
-          <td>
-            <li>Head of the Library</li>
-            <li>Statistics and Analysis</li>
-          </td>
         </tr>
         <tr>
-          <td><img class="book-image" src="{% static 'Images/book2.jpg' %}" alt="Book Image"></td>
+          <td><img class="book-image" src="{% static 'Images/Siddhartha.jpg' %}" alt="Book Image"></td>
           <td>SIDDHARTHA SINHA</td>
           <td>ASSISTANT LIBRARIAN</td>
           <td>
             <li>Phone: 8582873442</li>
             <li>Email: siddhartha.sinha@msds.christuniversity.in</li>
           </td>
-          <td>
-            <li>Handling Book Circulations</li>
-            <li>Book Management</li>
-            <li>Feedback Handling</li>
-          </td>
         </tr>
         <tr>
-          <td><img class="book-image" src="{% static 'Images/book3.jpg' %}" alt="Book Image"></td>
+          <td><img class="book-image" src="{% static 'Images/Yashi.jpg' %}" alt="Book Image"></td>
           <td>YASHI</td>
           <td>ASSISTANT LIBRARIAN</td>
           <td>
             <li>Phone: 9457945944</li>
-            <li>Email: yashi@msds.christuniversity.in</li>
-          </td>
-          <td>
-            <li>User Registration and Management</li>
-            <li>Penalty Management</li>
-            <li>Security and Access</li>
+            <li>Email: yashi.s@msds.christuniversity.in</li>
           </td>
         </tr>
       </tbody>

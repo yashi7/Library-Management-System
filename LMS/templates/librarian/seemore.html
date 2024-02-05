@@ -14,58 +14,85 @@
       display: flex;
       justify-content: center;
       align-items: center;  
+      flex-direction: column; 
       height: 100vh;
       background-image: url('{% static "Images/image1.jpg" %}'); 
       animation: fadeIn 1s ease-in-out;
     }
 
     .container {
-      display: flex;
-      justify-content: center; 
-      align-items: center; 
-      flex-direction: column; 
-      width: 80%;
-      color: aliceblue;
-      margin-top: 10%; 
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    color: aliceblue;
+  }
 
-    table {
-      border-collapse: collapse;
-      width: 60%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-right: 20px;
-      margin-top: 430%; 
-      margin-bottom: 10%; 
-      animation: slideInLeft 1s ease-in-out;
-    }
+  .header {
+    margin-top: 432%; /* Adjusted margin-top to reduce the gap */
+    text-align: center;
+    margin-bottom: 1%;
+    padding: 20px 0;
+    background: linear-gradient(burlywood 50%, beige);
+    border-radius: 10px 10px 0 0;
+    color: black;
+    animation: fadeInUp 1s ease-out;
+    width: 100%;
+  }
 
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-      vertical-align: middle; 
-      transition: background-color 0.3s ease-in-out;
-    }
+  .header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+    
+  h1{ color: white; margin-bottom: 20px; }
 
-    th {
-      background-color: burlywood;
-      color: whitesmoke;
-    }
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-top: 2%; /* Adjusted margin-top to reduce the gap */
+    margin-bottom: 15%;
+    animation: slideInLeft 1s ease-in-out;
+  }
 
-    tr:nth-child(even) {
-      /* background-color: #f7f7f7; */
-    }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.3s ease-in-out;
+  }
 
-    tr:hover {
-      background-color: beige;
-      color: black;
-      transform: scale(1.02);
-    }
+  th {
+    background-color: burlywood;
+    color: whitesmoke;
+    font-size: x-large;
+  }
 
-    .book-image {
-      max-width: 100px; 
-      height: auto;     
-    }
+  tr:nth-child(even) {
+    /* background-color: #f7f7f7; */
+  }
+
+  tr:hover {
+    background-color: beige;
+    color: black;
+    transform: scale(1.02);
+  }
+
+  .book-image {
+    max-width: 100px; 
+    height: auto;     
+  }
+
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 20%;
+  }
 
     @keyframes fadeIn {
       from {
@@ -98,10 +125,39 @@
       }
     }
 
+    @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.more-books {
+  font-size: 24px;
+  margin-top: 1%;
+  color: white;
+  animation: bounce 2s infinite;
+  
+  background: linear-gradient(to right, gold, #8b4513); /* Gradient background */
+  padding: 10px; /* Add padding for better visibility */
+  border-radius: 5px; /* Rounded corners */
+  display: inline-block; /* Make it an inline block to fit the background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
   </style>
 </head>
-<body> 
+<body>  
+
   <div class="container">
+    <header class="header">
+      <h1 class="h1">OUR ALL COLLECTIONS</h1>
+    </header>
     <table>
       <thead>  
         <tr>
@@ -465,6 +521,8 @@
         </tr>
       </tbody>
     </table>
+
+    <p class="more-books">More books coming soon!</p>
   </div>
 
 </body>

@@ -202,26 +202,26 @@
         }
 
         .see-more-link {
-        color: white;
-        font-size: 18px;
-        text-decoration: none;
-        transition: transform 0.3s ease-in-out; 
-    }
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;
+        }
 
-    .see-more-link:hover {
-        animation: seeMoreAnimation 0.5s ease-in-out infinite alternate; 
-        text-decoration: none; 
-        transition: transform 0.3s ease-in-out; 
-    }
+        .see-more-link:hover {
+            transform: scale(1.2);
+            text-decoration: none;
+        }
 
-    @keyframes seeMoreAnimation {
-        0% {
+        @keyframes seeMoreAnimation {
+            0% {
             transform: scale(1);
         }
-        100% {
+            100% {
             transform: scale(1.2);
         }
-    }
+        }
     </style>
     
 </head>
@@ -239,7 +239,7 @@
     </header>
     <br>
     <div class="image-container"  >
-        <img src="{% static 'Images/4-removebg-preview (1) (2) (1).png' %}" alt="Christ Image" class="overlay" style="margin-top: 22%; ">
+        <img src="{% static 'Images/4-removebg-preview (1) (2) (1).png' %}" alt="Christ Image" class="overlay" style="margin-top: 25%; ">
     </div>
     <div class="top-picks-heading" style="margin-top: 50%; color: white;">
         <h1 class="animated-heading"><b>
@@ -320,22 +320,10 @@
   </div>
   <div class="books-section" style="margin-top: 5%;">
     <div class="book-container">
-        <img src="{% static 'Images/book1.jpg' %}" alt="Book 1" class="book">
-    </div>
-    <div class="book-container">
         <img src="{% static 'Images/book2.jpg' %}" alt="Book 2" class="book">
     </div>
     <div class="book-container">
         <img src="{% static 'Images/book3.jpg' %}" alt="Book 3" class="book">
-    </div>
-    <div class="book-container">
-        <img src="{% static 'Images/book4.jpg' %}" alt="Book 4" class="book">
-    </div>
-    <div class="book-container">
-        <img src="{% static 'Images/book5.jpg' %}" alt="Book 5" class="book">
-    </div>
-    <div class="book-container">
-        <img src="{% static 'Images/book6.jpg' %}" alt="Book 6" class="book">
     </div>
     <div class="book-container">
         <img src="{% static 'Images/book7.jpg' %}" alt="Book 7" class="book">
@@ -343,28 +331,40 @@
     <div class="book-container">
         <img src="{% static 'Images/book8.jpg' %}" alt="Book 8" class="book">
     </div>
+    <div class="book-container">
+        <img src="{% static 'Images/book12.jpg' %}" alt="Book 12" class="book">
+    </div>
+    <div class="book-container">
+        <img src="{% static 'Images/book18.jpg' %}" alt="Book 18" class="book">
+    </div>
+    <div class="book-container">
+        <img src="{% static 'Images/book24.jpg' %}" alt="Book 24" class="book">
+    </div>
+    <div class="book-container">
+        <img src="{% static 'Images/book25.jpg' %}" alt="Book 25" class="book">
+    </div>
     </div>  
     <div class="books-section"> 
     <div class="book-container" >
-        <img src="{% static 'Images/book9.jpg' %}" alt="Book 9" class="book">
+        <img src="{% static 'Images/book44.jpg' %}" alt="Book 44" class="book">
     </div>
     <div class="book-container" >
-        <img src="{% static 'Images/book10.jpg' %}" alt="Book 10" class="book">
+        <img src="{% static 'Images/book45.jpg' %}" alt="Book 45" class="book">
     </div>
     <div class="book-container" >
-        <img src="{% static 'Images/book11.jpg' %}" alt="Book 11" class="book">
+        <img src="{% static 'Images/book46.jpg' %}" alt="Book 46" class="book">
     </div>
     <div class="book-container" >
-        <img src="{% static 'Images/book12.jpg' %}" alt="Book 12" class="book">
+        <img src="{% static 'Images/book47.jpg' %}" alt="Book 47" class="book">
     </div>
     <div class="book-container" >
-        <img src="{% static 'Images/book13.jpg' %}" alt="Book 13" class="book">
+        <img src="{% static 'Images/book48.jpg' %}" alt="Book 48" class="book">
     </div>
     <div class="book-container" >
-        <img src="{% static 'Images/book14.jpg' %}" alt="Book 14" class="book">
+        <img src="{% static 'Images/book42.jpg' %}" alt="Book 42" class="book">
     </div>
     <div class="book-container" >
-        <img src="{% static 'Images/book15.jpg' %}" alt="Book 15" class="book">
+        <img src="{% static 'Images/book50.jpg' %}" alt="Book 50" class="book">
     </div>
     </div>
 

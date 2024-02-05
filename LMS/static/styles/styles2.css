@@ -18,16 +18,16 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-header, footer {
+.header, footer {
     text-align: center;
     margin-bottom: 20px;
 }
 
-header {
+.header {
     padding: 20px 0;
-    background: linear-gradient(to right, #3498db, #2980b9);
+    background: linear-gradient( burlywood 50%,beige);
     border-radius: 10px 10px 0 0;
-    color: white;
+    color: black;
     animation: fadeInUp 1s ease-out;
 }
 
@@ -36,14 +36,14 @@ header {
     to { opacity: 1; transform: translateY(0); }
 }
 
-header h1 {
+.header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-footer {
+.footer {
     padding: 10px 0;
-    background: linear-gradient(to right, #2980b9, #3498db);
+    background: linear-gradient( beige , burlywood 50%);
     border-radius: 0 0 10px 10px;
     color: white;
 }
@@ -52,7 +52,7 @@ footer {
 
 h1, h2, p { color: white; margin-bottom: 20px; }
 
-a { color: #3498db; text-decoration: none; }
+a { color: burlywood; text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
@@ -60,7 +60,7 @@ a:hover { text-decoration: underline; }
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #3498db;
+    background-color: burlywood;
     color: white;
     font-size: 24px;
     width: 40px;
@@ -85,7 +85,7 @@ a:hover { text-decoration: underline; }
     animation: expand 0.5s ease-out;
 }
 
-.query-form h3 { font-size: 1.5em; color: #3498db; margin-bottom: 15px; }
+.query-form h3 { font-size: 1.5em; color: burlywood; margin-bottom: 15px; }
 
 .query-form label { font-size: 1.2em; color: #333; margin-bottom: 8px; }
 
@@ -99,7 +99,7 @@ a:hover { text-decoration: underline; }
 }
 
 .query-form button {
-    background-color: #3498db;
+    background-color: burlywood;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -113,7 +113,7 @@ a:hover { text-decoration: underline; }
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #3498db;
+    color: beige;
 }
 
 @keyframes bounce {
