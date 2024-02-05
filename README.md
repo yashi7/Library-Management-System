@@ -9,8 +9,11 @@ Welcome to the Christ University Library Management System. This system is desig
 
 ## Getting Started
 1. Clone the repository.
-2. ......
-3. ......
+2. 
+3.
+4.
+5.
+6.
 
 ## Contributing
 We welcome contributions! Please read our [Contribution Guidelines](CONTRIBUTING.md) for more information.
