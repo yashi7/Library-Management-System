@@ -51,7 +51,7 @@ Visit the original repository on GitHub and submit a pull request from your feat
 Your pull request will undergo a comprehensive code review. Make necessary adjustments based on the feedback received.
 
 ## Additional guidance:
-If you have any questions, encounter issues, or need assistance during the contribution process, please feel free to reach out to us at anurag.yadav@msds.christuniversity.in.
+If you have any questions, encounter issues, or need assistance during the contribution process, please feel free to reach out to us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in)
 
 We deeply appreciate your commitment to enhancing the Christ University Library project and eagerly anticipate your valuable contributions!
 
