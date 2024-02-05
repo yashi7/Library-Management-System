@@ -1,15 +1,16 @@
-# CONTRIBUTING TO CHRIST UNIVERSITY LIBRARY
+# CONTRIBUTING TO CHRIST UNIVERSITY LIBRARY 📚
 
-Thank you for expressing interest in contributing to our project!
+Thank you for expressing interest in contributing to our project! 🌟
 
-## Prerequisites:
+## Prerequisites 🛠️
 Before you start, make sure you have the following installed:
 
-- Python: Ensure you have the latest version of Python installed from the official [Python website](https://www.python.org/).
-- Git: Confirm that Git, a version control system, is installed on your machine. You can download it from [here](https://git-scm.com/).
-- Django: Our project uses Django, a Python web framework. Install Django with the command: `pip install django`.
+- Python: Ensure you have the latest version of Python installed from the official [Python website](https://www.python.org/) 🐍.
+- Git: Confirm that Git, a version control system, is installed on your machine. You can download it from [here](https://git-scm.com/) 📦.
+- Django: Our project uses Django, a Python web framework. Install Django with the command: `pip install django` ⚙️.
 
-## Getting Started:
+
+## Getting Started 🚀
 Follow these steps to set up your development environment and contribute:
 
 1. **Fork the Repository:**
@@ -39,7 +40,7 @@ Follow these steps to set up your development environment and contribute:
    Once satisfied, commit your changes with clear, descriptive commit messages:
    ```bash
    git add .
-   git commit -m "Your descriptive commit message here"
+   git commit -m "Your descriptive commit message here" 💬
 
 9. **Push Changes:**
 Push your changes to your forked repository: git push origin feature/your-feature-name.
@@ -50,8 +51,8 @@ Visit the original repository on GitHub and submit a pull request from your feat
 11. **Code Review:**
 Your pull request will undergo a comprehensive code review. Make necessary adjustments based on the feedback received.
 
-## Additional guidance:
-If you have any questions, encounter issues, or need assistance during the contribution process, please feel free to reach out to us at [yashi.s@msds.christuniversity.in](mailto:yashi.s@msds.christuniversity.in)
+## Additional Guidance: 🚦
+If you have any questions, encounter issues, or need assistance during the contribution process, please feel free to reach out to us at yashi.s@msds.christuniversity.in 📧.
 
-We deeply appreciate your commitment to enhancing the Christ University Library project and eagerly anticipate your valuable contributions!
+We deeply appreciate your commitment to enhancing the Christ University Library project and eagerly anticipate your valuable contributions! 🙌
 
