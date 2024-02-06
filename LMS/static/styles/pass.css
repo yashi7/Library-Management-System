@@ -37,18 +37,18 @@ button {
     width: calc(100% - 18px);
     padding: 10px;
     border-radius: 3px;
-    border: 1px solid #0cb3c2f1;
+    border: 1px solid rgb(96, 65, 26);
 }
 
 button {
-    background-color: #1cabc4c3;
+    background-color: burlywood;
     color: #f2f3f8f3;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #02448a;
+    background-color: rgb(155, 103, 34);
 }
 
 .error-message {

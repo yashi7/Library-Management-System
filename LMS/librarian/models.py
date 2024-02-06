@@ -25,3 +25,12 @@ class user_with_books(models.Model):
     IssuedOn=models.DateField()
     ReturnedOn=models.DateField(null=True)
     Fine=models.CharField(max_length=200)
+
+class feedback(models.Model):
+    Name=models.CharField(max_length=200)
+    Email=models.CharField(max_length=200)
+    Feedback=models.CharField(max_length=500)
+
+class queries(models.Model):
+    Query=models.CharField(max_length=1000)
+    

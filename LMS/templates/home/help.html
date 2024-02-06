@@ -29,7 +29,8 @@
             <span>?</span>
         </div>
         <div class="query-form" id="queryForm">
-            <form action="#">
+            <form action="#" method="post">
+                {% csrf_token %}
                 <h3>Send Your Query</h3>
                 <label for="query">Your Query:</label>
                 <textarea id="query" name="query" rows="4" required></textarea>

@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables,logout
+from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback1,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables,logout,adFeedback,adQuery,forgotpass
 
 
 urlpatterns = [
@@ -35,7 +35,7 @@ urlpatterns = [
     path('analytics/',analytics,name='analytics'),
     path('lib/',lib,name='lib'),
     path('rules/',rules,name='r'),
-    path('feedback/',feedback,name='feedback'),
+    path('feedback/',feedback1,name='feedback'),
     path('userbooks/',userBooks,name='userbooks'),
     path('libbooks/',libBook,name='libbooks'),
     path('delete/<str:id>',deletebook,name='delete'),
@@ -46,5 +46,8 @@ urlpatterns = [
     path('adminbooks/',adminBooks,name='adminbooks'),
     path('admintables/',admintables,name='admintables'),
     path('logout/',logout,name='logout'),
+    path('adminquery/',adQuery,name='adminquery'),
+    path('adminfeedback/',adFeedback,name='adminfeedback'),
+    path('forgotpassword/',forgotpass,name='forgotpassword'),
 ]
 

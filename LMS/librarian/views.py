@@ -2,7 +2,7 @@ from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login
 import datetime
-from .models import user_new,books,user_with_books
+from .models import user_new,books,user_with_books,feedback,queries
 from django.utils.dateparse import parse_date
 from django.middleware.csrf import rotate_token
 from django.http import HttpResponse
@@ -79,6 +79,13 @@ def aboutus(request):
 def contactus(request):
     return render(request, 'home/contact_us.html')
 def help(request):
+    if request.method=='POST':
+        query=request.POST.get('query')
+
+        prob=queries(
+            Query=query
+        )
+        prob.save()
     return render(request, 'home/help.html')
 
 def tables(request):
@@ -140,7 +147,18 @@ def lib(request):
     return render(request, 'librarian/librarian.html',{'lib_details':data})
 def rules(request):
     return render(request, 'home/r.html')
-def feedback(request):
+def feedback1(request):
+    if request.method=='POST':
+        f_name=request.POST.get('formName')
+        f_email=request.POST.get('formEmail')
+        f_msg=request.POST.get('formMessage')
+        review=feedback(
+            Name=f_name,
+            Email=f_email,
+            Feedback=f_msg
+        )
+        review.save()
+
     return render(request, 'home/feedback.html')
 
 def userBooks(request):
@@ -232,3 +250,11 @@ def logout(request):
     rotate_token(request)
 
     return redirect('login')
+def adQuery(request):
+    Q_data=queries.objects.all()
+    return render(request, 'admin/a_query.html',{'queries':Q_data})
+def adFeedback(request):
+    F_data=feedback.objects.all()
+    return render(request, 'admin/a_reviews.html',{'feedbacks':F_data})
+def forgotpass(request):
+    return render(request,'home/pass.html')

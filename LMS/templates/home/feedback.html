@@ -321,6 +321,7 @@
       ------------------------------------------------------------>
     
         <form method="post">
+            {% csrf_token %}
             <h1 class="title text-center mt-4 mb-4" style="color: aliceblue; font-family: 'Times New Roman', Times, serif;">SEND FEEDBACK</h1>
     
             
@@ -328,7 +329,7 @@
                 <label for="formName" class="d-block">
                     <i class="icon" data-feather="user"></i>
                 </label>
-                <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+                <input type="text" id="formName" name="formName" class="form-control form-control-lg thick" placeholder="Name">
             </div>
     
             <!-- E-mail -->
@@ -336,12 +337,12 @@
                 <label for="formEmail" class="d-block">
                     <i class="icon" data-feather="mail"></i>
                 </label>
-                <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+                <input type="email" id="formEmail" name="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
             </div>
     
             <!-- Message -->
             <div class="form-group message">
-                <textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="..."></textarea>
+                <textarea id="formMessage" name="formMessage" class="form-control form-control-lg" rows="7" placeholder="..."></textarea>
             </div>
     
             <!-- Submit btn -->
@@ -353,6 +354,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="{% static 'styles/feedback.js' %}"></script>
+    
 </body>
 
 </html>

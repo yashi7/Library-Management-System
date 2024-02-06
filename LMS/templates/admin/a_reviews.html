@@ -40,13 +40,13 @@ data-toggle="collapse" data-target="#navbar">
                 Books</a></li>
                
                 <li class="nav-item"><a href="{% url 'admintables' %}" class="nav-link text-white p-3 mb-2
-                    current"><i class="fas fa-table text-light fa-lg mr-3"></i>
+                    sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
                 Tables</a></li>
                 <li class="nav-item"><a href="{% url 'adminquery' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
                 Queries</a></li>
                 <li class="nav-item"><a href="{% url 'adminfeedback' %}" class="nav-link text-white p-3 mb-2
-                    sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>
+                    current"><i class="fas fa-table text-light fa-lg mr-3"></i>
                 Feedback</a></li>
                 <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-white p-3 mb-2
                     sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
@@ -60,9 +60,7 @@ data-toggle="collapse" data-target="#navbar">
    <div class="col-md-4">
  
    </div>
-   <div class="col-md-5">
-    <h1 style="color: white;text-decoration: underline;">TABLES</h1>
-   </div>
+   
   
         </div>
 </div>
@@ -84,26 +82,24 @@ data-toggle="collapse" data-target="#navbar">
                 <div class="row " style="margin-left: 20%;" >
                      <div class="col-xl-6 col-12 mb-4 mb-xl-0">
                        <h3 class="text-light text-center mb-3" style="font-family: 'Times New Roman', Times, serif; margin-top: 10%;">
-                           USERS
+                           FEEDBACKS
                        </h3> 
                        <table class="table table-striped bg-light text-center">
                            <thead>
                                <tr class="text-dark">
                                    
                                    <th>Name</th>
-                                   <th>Register Number</th>
                                    <th>Email</th>
-                                   <th>User Type</th>
+                                   <th>Feedback</th>
 
                                </tr>
                            </thead>
                            <tbody>
                                <tr>
-                                {% for i in us_st %}
-                                   <th>{{i.Username}}</th>
-                                   <td>{{i.Register_number}}</td>
+                                {% for i in feedbacks %}
+                                   <th>{{i.Name}}</th>
                                    <td>{{i.Email}}</td>
-                                   <td>{{i.Login_as}}</td>
+                                   <td>{{i.Feedback}}</td>
                                </tr>
                                 {% endfor %}
                                        
