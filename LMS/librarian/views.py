@@ -6,6 +6,10 @@ from .models import user_new,books,user_with_books,feedback,queries
 from django.utils.dateparse import parse_date
 from django.middleware.csrf import rotate_token
 from django.http import HttpResponse
+import matplotlib.pyplot as plt
+from io import BytesIO
+import base64
+
 result=[]
 book=[]
 def index(request):
@@ -178,13 +182,15 @@ def userBooks(request):
         Issue=request.POST.get('isu')
         print(Issue)
         Return=request.POST.get('ret')
+        if Return=='':
+            Return=Issue
         Total_fine=0
         if Return!='':
             Total_fine=calculateFine(Issue,Return)
 
         print(Return)
+        updateBookStatus(B_id,B_status)
         
-
        
         issues=user_with_books(
             BookId=B_id,
@@ -196,12 +202,12 @@ def userBooks(request):
         issues.save()
 
     book=books.objects.all()
+    
     return render(request, 'user/user_books.html',{'b_details':book,'user_details':data})
-def calculateFine(issue_date,return_date):
-    
-    
-    fine_total=0
 
+
+def calculateFine(issue_date,return_date):
+    fine_total=0
     issue_obj= parse_date(issue_date)    
     return_obj= parse_date(return_date)
 
@@ -228,20 +234,26 @@ def deletebook(request,id):
     print(books)
     d_book.delete()
     return redirect('libbooks')
+
 def libprofile(request):
     usernm=request.user.username
     result=user_new.objects.filter(Username=usernm)
     data=result[0]           
     return render(request, 'librarian/lib_profile.html',{'lib_details':data})
+
 def seemore(request):
     return render(request, 'home/seemore.html')
+
 def members(request):
     return render(request, 'home/members.html')
+
 def adminpanel(request):
     return render(request,'admin/admin_panel.html')
+
 def adminBooks(request):
     bookk=books.objects.all()
     return render(request,'admin/admin_books.html',{'book':bookk})
+
 def admintables(request):
     us_stt=user_new.objects.all()
     book_det=user_with_books.objects.all()
@@ -258,3 +270,48 @@ def adFeedback(request):
     return render(request, 'admin/a_reviews.html',{'feedbacks':F_data})
 def forgotpass(request):
     return render(request,'home/pass.html')
+
+def analytics(request):
+    # Get the count of all records in user_with_books model
+    total_books_count = user_with_books.objects.count()
+    print(total_books_count)
+
+    # Get the count of books with a non-null ReturnedOn field
+    books_returned_count = user_with_books.objects.exclude(ReturnedOn__isnull=True).count()
+    books_issued_count = user_with_books.objects.exclude(IssuedOn__isnull=True).count()
+
+
+    # Calculate the count of books that are  issued (not returned)
+
+    # Create a pie chart
+    labels = ['Books Issued', 'Books Returned']
+    sizes = [books_issued_count, books_returned_count]
+
+    # Save the pie chart to a BytesIO object
+    fig, ax = plt.subplots()
+    ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+    ax.axis('equal')  # Equal aspect ratio ensures the pie chart is circular
+
+    buffer = BytesIO()
+    plt.savefig(buffer, format='png')
+    buffer.seek(0)
+
+    # Convert the image to base64 for embedding in HTML
+    image_base64 = base64.b64encode(buffer.read()).decode('utf-8')
+    plt.close()
+
+    return render(request, 'admin/analytics.html', {'image_base64': image_base64})
+
+# def edit(request,id):
+#     update= books.objects.get(BookId=id)
+#     if request.POST:
+#         status= request.POST['b_status']
+#         update.BookStatus=status
+#         update.save()
+#         return redirect('libbooks')
+#     return render(request,'librarian/lib_books.html',context={'update':update})  
+
+def updateBookStatus(bookid,status):
+    update=books.objects.get(BookId=bookid)
+    update.BookStatus=status
+    update.save()

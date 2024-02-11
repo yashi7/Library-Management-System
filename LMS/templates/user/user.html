@@ -15,7 +15,7 @@
 </head>
 
 <body style="background-image: url('/static/Images/image1.jpg'); font-family: 'Times New Roman', Times, serif;">
-
+    <h1 style="background:linear-gradient( burlywood 60%,beige); font-weight: 600; width: 83.5%; margin-left: 16.6%;"><CENTER style="color: white;">WELCOME USER</CENTER></h1>
     <nav class="navbar navbar-expand-md navbar-light">
         <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span>
@@ -88,8 +88,8 @@
                                     </div>
                                 </div>
                                 <div class="card-footer text-dark">
-                                    <i class="fas fa-spinner fa-pulse text-success mr-3"></i>
-                                    <span>Updating</span>
+                                    <!-- <i class="fas fa-spinner fa-pulse text-success mr-3"></i> -->
+                                    <span>Dues to be cleared</span>
                                 </div>
 
 
@@ -120,8 +120,8 @@
                                             <tr style="padding: 5%;">
                                                 <th>BOOK TITLE</th>
                                                 <th>BOOK ID</th>
-                                                <th>AUTHOR</th>
-                                                <th>BOOK STATUS</th>
+                                                <th>ISSUE DATE</th>
+                                                <th>RETURN DATE</th>
                                                 <th>PENALTY </th>
                                             </tr>
                                         </thead>
@@ -130,13 +130,22 @@
 
                                             <tr>
                                                 {% for i in det %}
+                                                {% if i.IssuedOn == i.ReturnedOn %}
+
+                                                
+                                                <td>{{i.BookId}}</td>
+                                                <td>{{i.Register_number}}</td>
+                                                <td>{{i.IssuedOn}}</td>
+                                                <td></td>
+                                                <td>{{i.Fine}}</td>
+                                                {% else %}
                                                 <td>{{i.BookId}}</td>
                                                 <td>{{i.Register_number}}</td>
                                                 <td>{{i.IssuedOn}}</td>
                                                 <td>{{i.ReturnedOn}}</td>
                                                 <td>{{i.Fine}}</td>
 
-
+                                                {% endif %}
                                             </tr>
                                                 {% endfor %}
 

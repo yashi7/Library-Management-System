@@ -91,7 +91,7 @@
                                 <img
                                     src="{% static 'Images/58372707_1247418162084625_4254928489880223744_n-removebg-preview.png' %}"></a>
                             <div class="bottom-border pb-3">
-    
+
                                 <p class="text-white "
                                     style="font-family: 'Times New Roman', Times, serif; text-transform: uppercase;">
                                     {{request.user.username}}-{{user_details.Register_number}}</p>
@@ -103,31 +103,31 @@
                                 <li class="nav-item"><a href="{% url 'profile' %}" class="nav-link text-white p-3 mb-2
                         sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>
                                         Profile</a></li>
-    
+
                                 <li class="nav-item"><a href="{% url 'userbooks' %}" class="nav-link text-white p-3 mb-2
                         current"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>
                                         Books</a></li>
-                                
+
                                 <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link text-white p-3 mb-2
                         sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>
                                         Log-out</a></li>
-    
-    
+
+
                         </div>
 
-                    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto top-bar  py-2 top-nav">
-                        <div class="row align-item-center">
-                            <div class="col-md-4">
+                        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto top-bar  py-2 top-nav">
+                            <div class="row align-item-center">
+                                <div class="col-md-4">
 
+                                </div>
+
+                                </ul>
                             </div>
-
-                            </ul>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
         </div>
     </nav>
 
@@ -168,9 +168,9 @@
                                     <thead>
                                         <tr>
                                             <th>BOOK TITLE</th>
+                                            <th>BOOK ID</th>
                                             <th>AUTHOR</th>
-                                            <th>STATUS</th>
-                                            <th>CURRENT COUNT</th>
+                                            <th> STATUS</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -184,7 +184,7 @@
                                             <td>{{b.BookStatus}}</td>
                                         </tr>
                                         {% endfor %}
-                                        
+
                                     </tbody>
                                 </table>
 
@@ -206,14 +206,18 @@
                                     <label for="id">Book Id:</label>
                                     <input type="text" id="b_id" name="b_id">
 
-                                    <label for="status">Book Status:</label>
-                                    <input type="text" id="b_status" name="b_status">
-                                    
+                                    <label for="status">Books Status</label>
+                                    <select class="form-group" id="b_status" name="b_status" required focus>
+                                        <option value="Issued" >Issuing</option>
+                                        <option value="Available" >Returning</option>
+                                        <option value="nothing" selected style="display: none;"> </option>
+                                    </select>
+
                                     <label for="date">Issued On:</label>
                                     <input type="date" id="isu" name="isu">
                                     <label for="date">Returned On:</label>
                                     <input type="date" id="ret" name="ret">
-                                    <button type="submit" style="font-weight: 400;" >SUBMIT</button>
+                                    <button type="submit" style="font-weight: 400;">SUBMIT</button>
 
                                 </form>
                             </div>
@@ -233,10 +237,52 @@
         <span style="text-align: center;color: white; display:flex; position:fixed; bottom: 0%;">
             <p>&copy; 2024 Library Management System</p>
         </span>
-            
+
     </div>
 
 
+<!-- <script>
+    var status= document.getElementById('b_status');
+    status.addEventListener('change', function (){
+    
+    console.log("thsi is status"+status)
+    if (status.value=='Issued'){
+    document.getElementById('ret').disabled=true;
+    document.getElementById('isu').disabled=false;
+    }
+    if(status.value=='Available'){
+        document.getElementById('isu').disabled=true;
+        document.getElementById('ret').disabled=false;
+    }
+})
+</script> -->
+
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var status = document.getElementById('b_status');
+
+        if (status) {
+            if (status.value==='nothing'){
+                    document.getElementById('isu').disabled = true;
+                    document.getElementById('ret').disabled = true;
+                }
+            status.addEventListener('change', function() {
+                console.log("This is status: " + status.value);
+
+                if (status.value === 'Issued') {
+                    document.getElementById('ret').disabled = true;
+                    document.getElementById('isu').disabled = false;
+                } else if (status.value === 'Available') {
+                    document.getElementById('isu').disabled = true;
+                    document.getElementById('ret').disabled = false;
+                }
+                
+            });
+        } else {
+            console.error("Element with ID 'b_status' not found");
+        }
+    });
+</script> -->
 
 </body>
 

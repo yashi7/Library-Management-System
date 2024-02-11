@@ -400,7 +400,7 @@
 
         function toggleDropdown(contentId) {
             var content = document.getElementById(contentId);
-            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+            content.style.display = (content.style.display =225666== 'none' || content.style.display === '') ? 'block' : 'none';
         }
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -408,12 +408,12 @@
 
             bookContainers.forEach(function (container) {
                 container.addEventListener('mouseenter', function () {
-                    // Add the 'expanded' class on hover
+                    
                     this.querySelector('.book').classList.add('expanded');
                 });
 
                 container.addEventListener('mouseleave', function () {
-                    // Remove the 'expanded' class when the mouse leaves
+                    
                     this.querySelector('.book').classList.remove('expanded');
                 });
             });

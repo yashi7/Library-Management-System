@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback1,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables,logout,adFeedback,adQuery,forgotpass
+from librarian.views import index,loginpage,aboutus,help,contactus,register, user_index,profile,tables,books_page,lib,analytics,rules,feedback1,userBooks,deletebook,libBook,libprofile,seemore,members,adminpanel,adminBooks,admintables,logout,adFeedback,adQuery,forgotpass,analytics
 
 
 urlpatterns = [
@@ -49,5 +49,9 @@ urlpatterns = [
     path('adminquery/',adQuery,name='adminquery'),
     path('adminfeedback/',adFeedback,name='adminfeedback'),
     path('forgotpassword/',forgotpass,name='forgotpassword'),
+    path('analytics/',analytics,name='analytics'),
+    # path('edit/<str:id>',edit,name='edit'),
+
 ]
+
 
